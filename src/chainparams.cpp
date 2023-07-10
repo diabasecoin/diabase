@@ -427,10 +427,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xcf;
-        pchMessageStart[1] = 0x0d;
-        pchMessageStart[2] = 0x6e;
-        pchMessageStart[3] = 0xbf;
+        pchMessageStart[0] = 0xbf;
+        pchMessageStart[1] = 0x0c;
+        pchMessageStart[2] = 0x6b;
+        pchMessageStart[3] = 0xbd;
         nDefaultPort = 9999;
         nPruneAfterHeight = 100000;
 
@@ -448,7 +448,7 @@ public:
         vSeeds.emplace_back("dnsseed.diabase.io");
 
         // Dash addresses start with 'D'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,30);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
         // Dash script addresses start with '7'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,16);
         // Dash private keys start with '7' or 'X'
@@ -630,10 +630,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x0000009303aeadf8cf3812f5c869691dbd4cb118ad20e9bf553be434bafe6a52"); // 470000
 
-        pchMessageStart[0] = 0xde;
-        pchMessageStart[1] = 0xe5;
-        pchMessageStart[2] = 0xc4;
-        pchMessageStart[3] = 0xf8;
+        pchMessageStart[0] = 0xce;
+        pchMessageStart[1] = 0xe2;
+        pchMessageStart[2] = 0xca;
+        pchMessageStart[3] = 0xff;
         nDefaultPort = 19999;
         nPruneAfterHeight = 1000;
 
@@ -650,7 +650,7 @@ public:
         vSeeds.emplace_back("testnet-seed.diabase.io"); // Just a static list of stable node(s), only supports x9
 
         // Testnet Dash addresses start with 's'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,125);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,140);
         // Testnet Dash script addresses start with '8' or '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,19);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
