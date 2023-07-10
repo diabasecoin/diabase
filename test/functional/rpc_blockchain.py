@@ -55,7 +55,7 @@ class BlockchainTest(BitcoinTestFramework):
 
     def run_test(self):
         # Have to prepare the chain manually here.
-        # txindex=1 by default in Dash which is incompatible with pruning.
+        # txindex=1 by default in Diabase which is incompatible with pruning.
         self.set_genesis_mocktime()
         for i in range(200):
             self.bump_mocktime(156)

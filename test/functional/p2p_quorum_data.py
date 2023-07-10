@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2021 The Dash Core developers
+# Copyright (c) 2021 The Diabase Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@ from test_framework.mininode import (
     network_thread_join,
     P2PInterface,
 )
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import (
     assert_equal,
     assert_raises_rpc_error,
@@ -123,10 +123,10 @@ class QuorumDataInterface(P2PInterface):
             assert not self.message_count["qdata"]
 
 
-class QuorumDataMessagesTest(DashTestFramework):
+class QuorumDataMessagesTest(DiabaseTestFramework):
     def set_test_params(self):
         extra_args = [["-llmq-data-recovery=0"]] * 4
-        self.set_dash_test_params(4, 3, fast_dip3_enforcement=True, extra_args=extra_args)
+        self.set_diabase_test_params(4, 3, fast_dip3_enforcement=True, extra_args=extra_args)
 
     def restart_mn(self, mn, reindex=False):
         args = self.extra_args[mn.nodeIdx] + ['-masternodeblsprivkey=%s' % mn.keyOperator]

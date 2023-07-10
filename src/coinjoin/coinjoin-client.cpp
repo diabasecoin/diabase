@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2021 The Dash Core developers
+// Copyright (c) 2014-2021 The Diabase Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -632,7 +632,7 @@ bool CCoinJoinClientSession::SignFinalTransaction(const CTransaction& finalTrans
             }
 
             LogPrint(BCLog::COINJOIN, "CCoinJoinClientSession::%s -- Signing my input %i\n", __func__, nMyInputIndex);
-            // TODO we're using amount=0 here but we should use the correct amount. This works because Dash ignores the amount while signing/verifying (only used in Bitcoin/Segwit)
+            // TODO we're using amount=0 here but we should use the correct amount. This works because Diabase ignores the amount while signing/verifying (only used in Bitcoin/Segwit)
             if (!SignSignature(mixingWallet, prevPubKey, finalMutableTransaction, nMyInputIndex, 0, int(SIGHASH_ALL | SIGHASH_ANYONECANPAY))) { // changes scriptSig
                 LogPrint(BCLog::COINJOIN, "CCoinJoinClientSession::%s -- Unable to sign my own transaction!\n", __func__);
                 // not sure what to do here, it will timeout...?

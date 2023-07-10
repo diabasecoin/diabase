@@ -35,7 +35,7 @@ EXPECTED_CIRCULAR_DEPENDENCIES=(
     "qt/addressbookpage -> qt/bitcoingui -> qt/walletview -> qt/receivecoinsdialog -> qt/addressbookpage"
     "qt/addressbookpage -> qt/bitcoingui -> qt/walletview -> qt/signverifymessagedialog -> qt/addressbookpage"
     "qt/addressbookpage -> qt/bitcoingui -> qt/walletview -> qt/sendcoinsdialog -> qt/sendcoinsentry -> qt/addressbookpage"
-    # Dash
+    # Diabase
     "coinjoin/coinjoin-server -> init -> coinjoin/coinjoin-server"
     "coinjoin/coinjoin-server -> net_processing -> coinjoin/coinjoin-server"
     "coinjoin/coinjoin -> llmq/quorums_chainlocks -> net -> coinjoin/coinjoin"

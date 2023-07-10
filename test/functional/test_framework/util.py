@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright (c) 2014-2016 The Bitcoin Core developers
-# Copyright (c) 2014-2021 The Dash Core developers
+# Copyright (c) 2014-2021 The Diabase Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Helpful routines for regression testing."""
@@ -40,10 +40,10 @@ def assert_fee_amount(fee, tx_size, fee_per_kB):
     """Assert the fee was in range"""
     target_fee = round(tx_size * fee_per_kB / 1000, 8)
     if fee < target_fee:
-        raise AssertionError("Fee of %s DASH too low! (Should be %s DASH)" % (str(fee), str(target_fee)))
+        raise AssertionError("Fee of %s DIAC too low! (Should be %s DIAC)" % (str(fee), str(target_fee)))
     # allow the wallet's estimation to be at most 2 bytes off
     if fee > (tx_size + 2) * fee_per_kB / 1000:
-        raise AssertionError("Fee of %s DASH too high! (Should be %s DASH)" % (str(fee), str(target_fee)))
+        raise AssertionError("Fee of %s DIAC too high! (Should be %s DIAC)" % (str(fee), str(target_fee)))
 
 def assert_equal(thing1, thing2, *args):
     if thing1 != thing2 or any(thing1 != arg for arg in args):
@@ -324,7 +324,7 @@ def initialize_datadir(dirname, n, chain):
         chain_name_conf_arg = chain
         chain_name_conf_section = chain
         chain_name_conf_arg_value = '1'
-    with open(os.path.join(datadir, "dash.conf"), 'w', encoding='utf8') as f:
+    with open(os.path.join(datadir, "diabase.conf"), 'w', encoding='utf8') as f:
         f.write("{}={}]\n".format(chain_name_conf_arg, chain_name_conf_arg_value))
         f.write("[{}]\n".format(chain_name_conf_section))
         f.write("port=" + str(p2p_port(n)) + "\n")
@@ -339,15 +339,15 @@ def get_datadir_path(dirname, n):
     return os.path.join(dirname, "node" + str(n))
 
 def append_config(datadir, options):
-    with open(os.path.join(datadir, "dash.conf"), 'a', encoding='utf8') as f:
+    with open(os.path.join(datadir, "diabase.conf"), 'a', encoding='utf8') as f:
         for option in options:
             f.write(option + "\n")
 
 def get_auth_cookie(datadir, chain):
     user = None
     password = None
-    if os.path.isfile(os.path.join(datadir, "dash.conf")):
-        with open(os.path.join(datadir, "dash.conf"), 'r', encoding='utf8') as f:
+    if os.path.isfile(os.path.join(datadir, "diabase.conf")):
+        with open(os.path.join(datadir, "diabase.conf"), 'r', encoding='utf8') as f:
             for line in f:
                 if line.startswith("rpcuser="):
                     assert user is None  # Ensure that there is only one rpcuser line

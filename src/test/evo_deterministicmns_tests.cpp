@@ -1,8 +1,8 @@
-// Copyright (c) 2018-2021 The Dash Core developers
+// Copyright (c) 2018-2021 The Diabase Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <test/test_dash.h>
+#include <test/test_diabase.h>
 
 #include <script/interpreter.h>
 #include <script/standard.h>

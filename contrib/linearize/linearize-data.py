@@ -13,7 +13,7 @@ import re
 import os
 import os.path
 import sys
-import dash_hash
+import diabase_hash
 import datetime
 import time
 from collections import namedtuple
@@ -57,7 +57,7 @@ def calc_hdr_hash(blk_hdr):
     #hash2_o = hash2.digest()
 
     #return hash2_o
-        pow_hash = dash_hash.getPoWHash(blk_hdr)
+        pow_hash = diabase_hash.getPoWHash(blk_hdr)
         return pow_hash
 
 def calc_hash_str(blk_hdr):

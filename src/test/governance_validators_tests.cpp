@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Dash Core developers
+// Copyright (c) 2014-2020 The Diabase Core developers
 
 #include <governance/governance-validators.h>
 #include <utilstrencodings.h>
@@ -6,7 +6,7 @@
 #include <test/data/proposals_valid.json.h>
 #include <test/data/proposals_invalid.json.h>
 
-#include <test/test_dash.h>
+#include <test/test_diabase.h>
 
 #include <iostream>
 #include <fstream>
