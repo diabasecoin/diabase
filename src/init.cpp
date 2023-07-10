@@ -57,7 +57,7 @@
 #include <masternode/masternode-utils.h>
 #include <messagesigner.h>
 #include <netfulfilledman.h>
-#include <spork.h>
+#include// <spork.h>
 #include <warnings.h>
 #include <walletinitinterface.h>
 
