@@ -1,7 +1,7 @@
 Description
 ------------
 
-This directory contains data-driven tests for various aspects of Diabase.
+This directory contains data-driven tests for various aspects of Dash.
 
 License
 --------

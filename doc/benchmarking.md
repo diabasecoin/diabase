@@ -1,14 +1,14 @@
 Benchmarking
 ============
 
-Diabase Core has an internal benchmarking framework, with benchmarks
+Dash Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
 Running
 ---------------------
-After compiling Diabase Core, the benchmarks can be run with:
+After compiling Dash Core, the benchmarks can be run with:
 
-    src/bench/bench_diabase
+    src/bench/bench_dash
 
 The output will look similar to:
 ```
@@ -153,7 +153,7 @@ Help
 ---------------------
 `-?` will print a list of options and exit:
 
-    src/bench/bench_diabase -?
+    src/bench/bench_dash -?
 
 Notes
 ---------------------

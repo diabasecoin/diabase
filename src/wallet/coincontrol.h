@@ -102,7 +102,7 @@ public:
         vOutpoints.assign(setSelected.begin(), setSelected.end());
     }
 
-    // Diabase-specific helpers
+    // Dash-specific helpers
 
     void UseCoinJoin(bool fUseCoinJoin)
     {

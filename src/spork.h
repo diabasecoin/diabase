@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2021 The Diabase Core developers
+// Copyright (c) 2014-2021 The Dash Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -193,7 +193,7 @@ public:
         }
         // we don't serialize pubkey ids because pubkeys should be
         // hardcoded or be setted with cmdline or options, should
-        // not reuse pubkeys from previous diabased run
+        // not reuse pubkeys from previous dashd run
         LOCK(cs);
         READWRITE(mapSporksByHash);
         READWRITE(mapSporksActive);

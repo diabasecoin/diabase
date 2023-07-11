@@ -58,13 +58,13 @@ TRAVIS_TIMEOUT_DURATION = 30 * 60
 BASE_SCRIPTS= [
     # Scripts that are run by the travis build process.
     # Longest test should go first, to favor running tests in parallel
-    'feature_dip3_deterministicmns.py', # NOTE: needs diabase_hash to pass
+    'feature_dip3_deterministicmns.py', # NOTE: needs dash_hash to pass
     'feature_block_reward_reallocation.py',
     'feature_llmq_data_recovery.py',
     'wallet_hd.py',
     'wallet_backup.py',
     # vv Tests less than 5m vv
-    'feature_block.py', # NOTE: needs diabase_hash to pass
+    'feature_block.py', # NOTE: needs dash_hash to pass
     'rpc_fundrawtransaction.py',
     'rpc_fundrawtransaction_hd.py',
     'wallet_multiwallet.py --usecli',
@@ -76,17 +76,17 @@ BASE_SCRIPTS= [
     'wallet_dump.py',
     'wallet_listtransactions.py',
     'feature_multikeysporks.py',
-    'feature_llmq_signing.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_signing.py --spork21', # NOTE: needs diabase_hash to pass
-    'feature_llmq_chainlocks.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_connections.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_simplepose.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_is_cl_conflicts.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_is_retroactive.py', # NOTE: needs diabase_hash to pass
-    'feature_llmq_dkgerrors.py', # NOTE: needs diabase_hash to pass
-    'feature_dip4_coinbasemerkleroots.py', # NOTE: needs diabase_hash to pass
+    'feature_llmq_signing.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_signing.py --spork21', # NOTE: needs dash_hash to pass
+    'feature_llmq_chainlocks.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_connections.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_simplepose.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_is_cl_conflicts.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_is_retroactive.py', # NOTE: needs dash_hash to pass
+    'feature_llmq_dkgerrors.py', # NOTE: needs dash_hash to pass
+    'feature_dip4_coinbasemerkleroots.py', # NOTE: needs dash_hash to pass
     # vv Tests less than 60s vv
-    'p2p_sendheaders.py', # NOTE: needs diabase_hash to pass
+    'p2p_sendheaders.py', # NOTE: needs dash_hash to pass
     'wallet_zapwallettxes.py',
     'wallet_importmulti.py',
     'mempool_limit.py',
@@ -98,7 +98,7 @@ BASE_SCRIPTS= [
     'feature_reindex.py',
     # vv Tests less than 30s vv
     'wallet_keypool_topup.py',
-    'interface_zmq_diabase.py',
+    'interface_zmq_dash.py',
     'interface_zmq.py',
     'interface_bitcoin_cli.py',
     'mempool_resurrect.py',
@@ -156,7 +156,7 @@ BASE_SCRIPTS= [
     'rpc_uptime.py',
     'wallet_resendwallettransactions.py',
     'feature_minchainwork.py',
-    'p2p_unrequested_blocks.py', # NOTE: needs diabase_hash to pass
+    'p2p_unrequested_blocks.py', # NOTE: needs dash_hash to pass
     'feature_shutdown.py',
     'rpc_coinjoin.py',
     'rpc_masternode.py',
@@ -234,7 +234,7 @@ def main():
     parser.add_argument('--failfast', action='store_true', help='stop execution after the first test failure')
     args, unknown_args = parser.parse_known_args()
 
-    # args to be passed on always start with two diabasees; tests are the remaining unknown args
+    # args to be passed on always start with two dashes; tests are the remaining unknown args
     tests = [arg for arg in unknown_args if arg[:2] != "--"]
     passon_args = [arg for arg in unknown_args if arg[:2] == "--"]
 
@@ -250,7 +250,7 @@ def main():
     logging.basicConfig(format='%(message)s', level=logging_level)
 
     # Create base test directory
-    tmpdir = "%s/diabase_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    tmpdir = "%s/dash_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     os.makedirs(tmpdir)
 
     logging.debug("Temporary test directory at %s" % tmpdir)
@@ -266,7 +266,7 @@ def main():
         sys.exit(0)
 
     if not (enable_wallet and enable_utils and enable_bitcoind):
-        print("No functional tests to run. Wallet, utils, and diabased must all be enabled")
+        print("No functional tests to run. Wallet, utils, and dashd must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -330,11 +330,11 @@ def main():
 def run_tests(*, test_list, src_dir, build_dir, tmpdir, jobs=1, enable_coverage=False, args=None, failfast=False, runs_ci, combined_logs_len=0):
     args = args or []
 
-    # Warn if diabased is already running (unix only)
+    # Warn if dashd is already running (unix only)
     try:
-        pidof_output = subprocess.check_output(["pidof", "diabased"])
+        pidof_output = subprocess.check_output(["pidof", "dashd"])
         if not (pidof_output is None or pidof_output == b''):
-            print("%sWARNING!%s There is already a diabased process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+            print("%sWARNING!%s There is already a dashd process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -458,7 +458,7 @@ class TestHandler:
         self.test_list = test_list
         self.flags = flags
         self.num_running = 0
-        # In case there is a graveyard of zombie diabaseds, we can apply a
+        # In case there is a graveyard of zombie dashds, we can apply a
         # pseudorandom offset to hopefully jump over them.
         # (625 is PORT_RANGE/MAX_NODES)
         self.portseed_offset = int(time.time() * 1000) % 625
@@ -588,7 +588,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `diabase-cli help` (`rpc_interface.txt`).
+    commands per `dash-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

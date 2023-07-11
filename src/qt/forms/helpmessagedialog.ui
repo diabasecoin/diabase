@@ -129,7 +129,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../diabase.qrc"/>
+  <include location="../dash.qrc"/>
  </resources>
  <connections>
   <connection>

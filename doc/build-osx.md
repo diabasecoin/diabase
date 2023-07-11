@@ -38,23 +38,23 @@ Next, follow the instructions in [build-generic](build-generic.md)
 Running
 -------
 
-Diabase Core is now available at `./src/diabased`
+Dash Core is now available at `./src/dashd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=diabaserpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DiabaseCore/diabase.conf"
+    echo -e "rpcuser=dashrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DashCore/dash.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/DiabaseCore/diabase.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/DashCore/dash.conf"
 
-The first time you run diabased, it will start downloading the blockchain. This process could take several hours.
+The first time you run dashd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/DiabaseCore/debug.log
+    tail -f $HOME/Library/Application\ Support/DashCore/debug.log
 
 Other commands:
 -------
 
-    ./src/diabased -daemon # Starts the diabase daemon.
-    ./src/diabase-cli --help # Outputs a list of command-line options.
-    ./src/diabase-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/dashd -daemon # Starts the dash daemon.
+    ./src/dash-cli --help # Outputs a list of command-line options.
+    ./src/dash-cli help # Outputs a list of RPC commands when the daemon is running.

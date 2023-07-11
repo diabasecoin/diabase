@@ -9,14 +9,14 @@ from codecs import encode
 
 from test_framework.test_framework import (
     BitcoinTestFramework, skip_if_no_bitcoind_zmq, skip_if_no_py3_zmq)
-from test_framework.mininode import diabasehash
+from test_framework.mininode import dashhash
 from test_framework.util import (assert_equal,
                                  bytes_to_hex_str,
                                  hash256,
                                  )
 
-def diabasehash_helper(b):
-    return encode(diabasehash(b)[::-1], 'hex_codec').decode('ascii')
+def dashhash_helper(b):
+    return encode(dashhash(b)[::-1], 'hex_codec').decode('ascii')
 
 class ZMQSubscriber:
     def __init__(self, socket, topic):
@@ -97,7 +97,7 @@ class ZMQTest (BitcoinTestFramework):
 
             # Should receive the generated raw block.
             block = self.rawblock.receive()
-            assert_equal(genhashes[x], diabasehash_helper(block[:80]))
+            assert_equal(genhashes[x], dashhash_helper(block[:80]))
 
         self.log.info("Wait for tx from second node")
         payment_txid = self.nodes[1].sendtoaddress(self.nodes[0].getnewaddress(), 1.0)

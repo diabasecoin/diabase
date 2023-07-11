@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2021 The Diabase Core developers
+// Copyright (c) 2019-2021 The Dash Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -164,10 +164,10 @@ UniValue getcoinjoininfo(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
     { //  category              name                      actor (function)         argNames
         //  --------------------- ------------------------  ---------------------------------
-        { "diabase",               "getpoolinfo",            &getpoolinfo,            {} },
-        { "diabase",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
+        { "dash",               "getpoolinfo",            &getpoolinfo,            {} },
+        { "dash",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
 #ifdef ENABLE_WALLET
-        { "diabase",               "coinjoin",               &coinjoin,               {} },
+        { "dash",               "coinjoin",               &coinjoin,               {} },
 #endif // ENABLE_WALLET
 };
 

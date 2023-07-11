@@ -136,7 +136,7 @@ public:
 };
 
 /**
- * Diabase RPC command dispatcher.
+ * Dash RPC command dispatcher.
  */
 class CRPCTable
 {

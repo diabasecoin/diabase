@@ -1,9 +1,9 @@
-// Copyright (c) 2020-2021 The Diabase Core developers
+// Copyright (c) 2020-2021 The Dash Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/diabase-config.h>
+#include <config/dash-config.h>
 #endif
 
 #include <qt/forms/ui_appearancewidget.h>
