@@ -3,7 +3,7 @@ Diabase Core version 0.17.0.2
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.diabase.com/downloads/#wallets>
 
 This is a new major version release, bringing new features, various bugfixes
 and other improvements.
@@ -23,7 +23,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux). If you upgrade after DIP0003 activation and you were
 using version < 0.13 you will have to reindex (start with -reindex-chainstate
 or -reindex) to make sure your wallet has all the new data synced. Upgrading
@@ -68,14 +68,14 @@ this feature is activated will diverge from the rest of the network.
 DKG Data Sharing
 ----------------
 Quorum resilience has been improved by enabling masternodes to request DKG data
-from other quorum members. This allows Dash Platform to obtain required
+from other quorum members. This allows Diabase Platform to obtain required
 information while also making it possible for corrupted masternodes to recover
 the DKG data they need to participate in quorums they are part of. Details are
 provided in [DIP-0021](https://github.com/dashpay/dips/blob/master/dip-0021.md).
 
 Platform support
 ----------------
-Support for Dash Platform has been expanded through the addition of a new
+Support for Diabase Platform has been expanded through the addition of a new
 quorum type `LLMQ_100_67`, several RPCs, and a way to limit Platform RPC access
 to a subset of allowed RPCs, specifically:
 - `getbestblockhash`
@@ -175,7 +175,7 @@ Minimum supported macOS version was bumped to 10.10.
 
 RPC changes
 -----------
-There are seven new RPC commands which are Dash specific and seven new RPC
+There are seven new RPC commands which are Diabase specific and seven new RPC
 commands introduced through Bitcoin backports. One previously deprecated RPC,
 `estimatefee`, was removed and several RPCs have been deprecated.
 
@@ -256,7 +256,7 @@ This release also introduces over 450 updates from Bitcoin v0.17 as well as
 some updates from Bitcoin v0.18 and more recent versions. This includes a
 number of performance improvements, dynamic loading of wallets via RPC, support
 for signalling pruned nodes, and a number of other updates that will benefit
-Dash users. Bitcoin changes that do not align with Dash’s product needs, such
+Diabase users. Bitcoin changes that do not align with Diabase’s product needs, such
 as SegWit and RBF, are excluded from our backporting. For additional detail on
 what’s included in Bitcoin v0.17, please refer to [their release notes](https://github.com/bitcoin/bitcoin/blob/master/doc/release-notes/release-notes-0.17.0.md).
 
@@ -291,7 +291,7 @@ As well as everyone that submitted issues and reviewed pull requests.
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Diabase was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -303,7 +303,7 @@ Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
 Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Darkcoin was rebranded to Diabase.
 
 Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 

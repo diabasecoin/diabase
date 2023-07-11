@@ -8,7 +8,7 @@
 # /etc/dash/dash.conf
 
 [Unit]
-Description=Dash daemon
+Description=Diabase daemon
 After=network.target
 
 [Service]

@@ -280,7 +280,7 @@
 - [`4b0a860f8f`](https://github.com/dashpay/dash/commit/4b0a860f8f) Merge #11870: wallet: Remove unnecessary mempool lock in ReacceptWalletTransactions
 - [`b695b67d5f`](https://github.com/dashpay/dash/commit/b695b67d5f) Merge #11516: crypto: Add test cases covering the relevant HMAC-SHA{256,512} key length boundaries
 - [`1a754b5d7b`](https://github.com/dashpay/dash/commit/1a754b5d7b) Merge #11829: Test datadir specified in conf file exists
-- [`f16a0f79aa`](https://github.com/dashpay/dash/commit/f16a0f79aa) bitcoin -> Dash
+- [`f16a0f79aa`](https://github.com/dashpay/dash/commit/f16a0f79aa) bitcoin -> Diabase
 - [`42583216fe`](https://github.com/dashpay/dash/commit/42583216fe) addressWidget -> search_widget
 - [`f32949fa91`](https://github.com/dashpay/dash/commit/f32949fa91) Merge #11834: [verify-commits] Fix gpg.sh's echoing for commits with '\n'
 - [`608fad56a0`](https://github.com/dashpay/dash/commit/608fad56a0) Merge #11781: Add `-debuglogfile` option
@@ -301,8 +301,8 @@
 - [`0dbfdad044`](https://github.com/dashpay/dash/commit/0dbfdad044) Merge #11655: net: Assert state.m_chain_sync.m_work_header in ConsiderEviction
 - [`5bbbce30eb`](https://github.com/dashpay/dash/commit/5bbbce30eb) Merge #11680: [docs] Add instructions for lcov report generation
 - [`46d2cc6159`](https://github.com/dashpay/dash/commit/46d2cc6159) Merge #11035: [contrib] Add Valgrind suppressions file
-- [`67c8484e20`](https://github.com/dashpay/dash/commit/67c8484e20) More of 11583 for Dash-specific code
-- [`6eb6298bc2`](https://github.com/dashpay/dash/commit/6eb6298bc2) More of 12218 for Dash-specific code
+- [`67c8484e20`](https://github.com/dashpay/dash/commit/67c8484e20) More of 11583 for Diabase-specific code
+- [`6eb6298bc2`](https://github.com/dashpay/dash/commit/6eb6298bc2) More of 12218 for Diabase-specific code
 - [`0255027fb6`](https://github.com/dashpay/dash/commit/0255027fb6) Fix "\n"s
 - [`e7beff5bcd`](https://github.com/dashpay/dash/commit/e7beff5bcd) Merge #12855: net: Minor accumulated cleanups
 - [`a3ea0e93ef`](https://github.com/dashpay/dash/commit/a3ea0e93ef) Merge #12626: Limit the number of IPs addrman learns from each DNS seeder

@@ -174,7 +174,7 @@ private:
     interfaces::Node& m_node;
 };
 
-/** Main Dash application object */
+/** Main Diabase application object */
 class BitcoinApplication: public QApplication
 {
     Q_OBJECT

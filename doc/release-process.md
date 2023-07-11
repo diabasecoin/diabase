@@ -19,7 +19,7 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for Dash
+* Update hardcoded [seeds](/contrib/seeds/README.md). TODO: Give example PR for Diabase
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate. Use the output of the RPC `getchaintxstats`, see
   [this pull request](https://github.com/bitcoin/bitcoin/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
@@ -266,7 +266,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
 - Announce the release:
 
-  - Release on Dash forum: https://www.dash.org/forum/topic/official-announcements.54/
+  - Release on Diabase forum: https://www.diabase.com/forum/topic/official-announcements.54/
 
   - Optionally Discord, twitter, reddit /r/Dashpay, ... but this will usually sort out itself
 

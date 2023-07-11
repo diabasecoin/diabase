@@ -45,7 +45,7 @@ Follow the instructions in [build-generic](build-generic.md)
 
 Security
 --------
-To help make your Dash installation more secure by making certain attacks impossible to
+To help make your Diabase installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 

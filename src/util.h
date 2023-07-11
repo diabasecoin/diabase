@@ -49,7 +49,7 @@
 #define DBG( x )
 #endif
 
-//Dash only features
+//Diabase only features
 
 extern bool fMasternodeMode;
 extern bool fDisableGovernance;

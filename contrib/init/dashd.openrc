@@ -19,7 +19,7 @@ BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
 name="Diabase Core Daemon"
-description="Dash cryptocurrency P2P network daemon"
+description="Diabase cryptocurrency P2P network daemon"
 
 command="/usr/bin/dashd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \

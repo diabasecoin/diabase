@@ -72,10 +72,10 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case DIAC: return QString("Dash");
-            case mDIAC: return QString("Milli-Dash (1 / 1" THIN_SP_UTF8 "000)");
-            case uDIAC: return QString("Micro-Dash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
-            case duffs: return QString("Ten Nano-Dash (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case DIAC: return QString("Diabase");
+            case mDIAC: return QString("Milli-Diabase (1 / 1" THIN_SP_UTF8 "000)");
+            case uDIAC: return QString("Micro-Diabase (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case duffs: return QString("Ten Nano-Diabase (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
     }

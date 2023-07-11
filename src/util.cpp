@@ -87,7 +87,7 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-//Dash only features
+//Diabase only features
 bool fMasternodeMode = false;
 bool fDisableGovernance = false;
 /**

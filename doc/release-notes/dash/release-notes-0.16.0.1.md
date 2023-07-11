@@ -3,7 +3,7 @@ Diabase Core version 0.16
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.diabase.com/downloads/#wallets>
 
 This is a new major version release, bringing new features, various bugfixes
 and other improvements.
@@ -23,7 +23,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux). If you upgrade after DIP0003 activation and you were
 using version < 0.13 you will have to reindex (start with -reindex-chainstate
 or -reindex) to make sure your wallet has all the new data synced. Upgrading
@@ -55,7 +55,7 @@ Notable changes
 Block Reward Reallocation
 -------------------------
 This version implements Block Reward Reallocation which was proposed in order
-to slow the growth rate of Dash’s circulating supply by encouraging the
+to slow the growth rate of Diabase’s circulating supply by encouraging the
 formation of masternodes and was voted in by the network. The resulting allocation
 will split all non-proposal block rewards 40% toward miners and 60% toward
 masternodes in the end-state once the transition period is complete.
@@ -98,7 +98,7 @@ each period.
 
 Dynamic Activation Thresholds
 -----------------------------
-In Dash we have used lower thresholds (80% vs 95% in BTC) to activate upgrades
+In Diabase we have used lower thresholds (80% vs 95% in BTC) to activate upgrades
 via a BIP9-like mechanism for quite some time. While it's preferable to have as much
 of the network hashrate signal update readiness as possible, this can result in
 quite lengthy upgrades if one large non-upgraded entity stalls
@@ -256,9 +256,9 @@ by specifying a path to custom css files via `--custom-css-dir`. Additionally, t
 `--debug-ui` will force Diabase Core to reload the custom css files as soon as they get updated
 which makes it possible to see and debug all css adjustments live in the running GUI.
 
-From now on the "Pay To" field in "Send" and "PrivateSend" tabs also accepts Dash URIs.
-The Dash address and the amount from the URI are assigned to corresponding fields automatically
-if a Dash URI gets pasted into the field.
+From now on the "Pay To" field in "Send" and "PrivateSend" tabs also accepts Diabase URIs.
+The Diabase address and the amount from the URI are assigned to corresponding fields automatically
+if a Diabase URI gets pasted into the field.
 
 Sporks
 ------
@@ -345,7 +345,7 @@ Backports from Bitcoin Core 0.16
 
 Most of the changes between Bitcoin Core 0.15 and Bitcoin Core 0.16 have been
 backported into Diabase Core 0.16. We only excluded backports which do not align
-with Dash, like SegWit or RBF related changes.
+with Diabase, like SegWit or RBF related changes.
 
 You can read about changes brought by backporting from Bitcoin Core 0.16 in
 following docs:
@@ -453,7 +453,7 @@ See detailed [set of changes](https://github.com/dashpay/dash/compare/v0.15.0.0.
 - [`bac02d0c9a`](https://github.com/dashpay/dash/commit/bac02d0c9a) More accurate fee calculation in CreateDenominated (#3588)
 - [`baf18a35d5`](https://github.com/dashpay/dash/commit/baf18a35d5) More pruning improvements (#3579)
 - [`0297eb428a`](https://github.com/dashpay/dash/commit/0297eb428a) Change litemode to disablegovernance (#3577)
-- [`da38e2bf83`](https://github.com/dashpay/dash/commit/da38e2bf83) Change litemode from disabling all Dash specific features to disabling governance validation (#3488)
+- [`da38e2bf83`](https://github.com/dashpay/dash/commit/da38e2bf83) Change litemode from disabling all Diabase specific features to disabling governance validation (#3488)
 - [`772b6bfe7c`](https://github.com/dashpay/dash/commit/772b6bfe7c) Disable new connection handling and concentrated recovery for large LLMQs (#3548)
 - [`c72bc354f8`](https://github.com/dashpay/dash/commit/c72bc354f8) contrib: Move dustinface.pgp into contrib/gitian-keys (#3547)
 - [`0b70380fff`](https://github.com/dashpay/dash/commit/0b70380fff) Fix argument handling for devnets (#3549)
@@ -485,7 +485,7 @@ See detailed [set of changes](https://github.com/dashpay/dash/compare/v0.15.0.0.
 - [`0c5c99243a`](https://github.com/dashpay/dash/commit/0c5c99243a) rpc/wallet: Add coinType to queryOptions of listunspent (#3483)
 - [`3a56ed9ca6`](https://github.com/dashpay/dash/commit/3a56ed9ca6) Fix NO_WALLET=1 build (#3490)
 - [`926087aac6`](https://github.com/dashpay/dash/commit/926087aac6) Implement significantly improved createdenominations algorithm (#3479)
-- [`fe208c98e3`](https://github.com/dashpay/dash/commit/fe208c98e3) Feat. request for Dash Platform: `quorum sign` rpc command with additional quorumHash #3424 (#3446)
+- [`fe208c98e3`](https://github.com/dashpay/dash/commit/fe208c98e3) Feat. request for Diabase Platform: `quorum sign` rpc command with additional quorumHash #3424 (#3446)
 - [`4c1f65baae`](https://github.com/dashpay/dash/commit/4c1f65baae) Fix #3241 UX/UI - Introduce PrivateSend tab which allows to spend fully mixed coins only (#3442)
 - [`f46617dbab`](https://github.com/dashpay/dash/commit/f46617dbab) add litemode information to help texts regarding CL/IS and change getbestchainlock to throw an error if running in litemode (#3478)
 - [`5cabc8f5ca`](https://github.com/dashpay/dash/commit/5cabc8f5ca) Introduce ONLY_PRIVATESEND coin type to select fully mixed coins only (#3459)
@@ -577,7 +577,7 @@ See detailed [set of changes](https://github.com/dashpay/dash/compare/v0.15.0.0.
 - [`aca6af0a0e`](https://github.com/dashpay/dash/commit/aca6af0a0e) Use smaller LLMQs in regtest (#3269)
 - [`88da298082`](https://github.com/dashpay/dash/commit/88da298082) Add -whitelist to all nodes in smartfees.py (#3273)
 - [`7e3ed76e54`](https://github.com/dashpay/dash/commit/7e3ed76e54) Make a deep copy of extra_args before modifying it in set_dash_test_params (#3270)
-- [`75bb7ec022`](https://github.com/dashpay/dash/commit/75bb7ec022) A few optimizations/speedups for Dash related tests (#3268)
+- [`75bb7ec022`](https://github.com/dashpay/dash/commit/75bb7ec022) A few optimizations/speedups for Diabase related tests (#3268)
 - [`2afdc8c6f6`](https://github.com/dashpay/dash/commit/2afdc8c6f6) Add basic PrivateSend RPC Tests (#3254)
 - [`dc656e3236`](https://github.com/dashpay/dash/commit/dc656e3236) Bump version to 0.16 on develop (#3239)
 - [`c182c6ca14`](https://github.com/dashpay/dash/commit/c182c6ca14) Upgrade Travis to use Bionic instead of Trusty (#3143)
@@ -606,7 +606,7 @@ As well as everyone that submitted issues and reviewed pull requests.
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Diabase was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -618,7 +618,7 @@ Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
 Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Darkcoin was rebranded to Diabase.
 
 Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 

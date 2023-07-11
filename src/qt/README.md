@@ -32,7 +32,7 @@ Tests.
 
 ### bitcoingui.(h/cpp)
 
-Represents the main window of the Dash UI.
+Represents the main window of the Diabase UI.
 
 ### \*model.(h/cpp)
 

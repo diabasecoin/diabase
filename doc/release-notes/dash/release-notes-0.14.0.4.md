@@ -3,7 +3,7 @@ Diabase Core version 0.14.0.4
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.diabase.com/downloads/#wallets>
 
 This is a new minor version release, bringing various bugfixes and improvements.
 
@@ -20,7 +20,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux). If you upgrade after DIP0003 activation and you were
 using version < 0.13 you will have to reindex (start with -reindex-chainstate
 or -reindex) to make sure your wallet has all the new data synced. Upgrading from
@@ -69,7 +69,7 @@ the stress tests performed by an unknown entity on mainnet.
 Improve re-requesting for already known transactions
 ----------------------------------------------------
 
-Previously, Dash would re-request old transactions even though they were already known locally. This
+Previously, Diabase would re-request old transactions even though they were already known locally. This
 happened when the outputs were respent very shortly after confirmation of the transaction. This lead to
 wrongly handling these transactions as orphans, filling up the orphan set and hitting limits very fast.
 This release fixes this for nodes which have txindex enabled, which is the case for all masternodes. Normal
@@ -132,7 +132,7 @@ As well as everyone that submitted issues and reviewed pull requests.
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Diabase was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -144,7 +144,7 @@ Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
 Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Darkcoin was rebranded to Diabase.
 
 Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 

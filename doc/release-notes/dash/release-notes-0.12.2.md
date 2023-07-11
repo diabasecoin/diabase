@@ -3,7 +3,7 @@ Diabase Core version 0.12.2
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.diabase.com/downloads/#wallets>
 
 This is a new major version release, bringing new features and other improvements.
 
@@ -19,7 +19,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux).
 
 Downgrade warning
@@ -39,7 +39,7 @@ Notable changes
 DIP0001
 -------
 
-We outline an initial scaling mechanism for Dash. After deployment and activation, Dash will be able to handle double the transactions it can currently handle. Together with the faster block times, Dash we will be prepared to handle eight times the traffic of Bitcoin.
+We outline an initial scaling mechanism for Diabase. After deployment and activation, Diabase will be able to handle double the transactions it can currently handle. Together with the faster block times, Diabase we will be prepared to handle eight times the traffic of Bitcoin.
 
 https://github.com/dashpay/dips/blob/master/dip-0001.md
 
@@ -128,7 +128,7 @@ Detailed [change log](https://github.com/dashpay/dash/compare/v0.12.1.x...dashpa
 - [`a443d4e2d`](https://github.com/dashpay/dash/commit/a443d4e2d) Backport Bitcoin PRs #6589, #7180 and remaining part of #7181: enable per-command byte counters in `CNode` (#1496)
 - [`f9730cb2e`](https://github.com/dashpay/dash/commit/f9730cb2e) Increase test coverage for addrman and addrinfo (#1497)
 - [`a12491448`](https://github.com/dashpay/dash/commit/a12491448) Eliminate unnecessary call to CheckBlock (#1498)
-- [`b0843c397`](https://github.com/dashpay/dash/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Dash-specific rpc (#1502)
+- [`b0843c397`](https://github.com/dashpay/dash/commit/b0843c397) Backport Bincoin PR#7348: MOVE ONLY: move rpc* to rpc/ + same for Diabase-specific rpc (#1502)
 - [`f65017cfe`](https://github.com/dashpay/dash/commit/f65017cfe) Backport Bitcoin PR#7349: Build against system UniValue when available (#1503)
 - [`ac6c3c900`](https://github.com/dashpay/dash/commit/ac6c3c900) Backport Bitcoin PR#7350: Banlist updates (#1505)
 - [`d787fe4ab`](https://github.com/dashpay/dash/commit/d787fe4ab) Backport Bitcoin PR#7458: [Net] peers.dat, banlist.dat recreated when missing (#1506)
@@ -239,7 +239,7 @@ Detailed [change log](https://github.com/dashpay/dash/compare/v0.12.1.x...dashpa
 - [`8da26da71`](https://github.com/dashpay/dash/commit/8da26da71) Eliminate g_connman use in spork module. (#1613)
 - [`4956ba7a7`](https://github.com/dashpay/dash/commit/4956ba7a7) Eliminate g_connman use in instantx module. (#1626)
 - [`10eddb52d`](https://github.com/dashpay/dash/commit/10eddb52d) Move some (spamy) CMasternodeSync log messages to new `mnsync` log category (#1630)
-- [`753b1e486`](https://github.com/dashpay/dash/commit/753b1e486) Eliminate remaining uses of g_connman in Dash-specific code. (#1635)
+- [`753b1e486`](https://github.com/dashpay/dash/commit/753b1e486) Eliminate remaining uses of g_connman in Diabase-specific code. (#1635)
 - [`8949f4345`](https://github.com/dashpay/dash/commit/8949f4345) Wait for full sync in functional tests that use getblocktemplate. (#1642)
 - [`5f0da8aa7`](https://github.com/dashpay/dash/commit/5f0da8aa7) fix sync (#1643)
 - [`7a8910443`](https://github.com/dashpay/dash/commit/7a8910443) Fix unlocked access to vNodes.size() (#1654)
@@ -276,7 +276,7 @@ Detailed [change log](https://github.com/dashpay/dash/compare/v0.12.1.x...dashpa
 - [`b6804678f`](https://github.com/dashpay/dash/commit/b6804678f) Minor Warning Fixed (#1482)
 - [`cd76f2a15`](https://github.com/dashpay/dash/commit/cd76f2a15) Disable HD wallet by default (#1629)
 - [`8f850c60f`](https://github.com/dashpay/dash/commit/8f850c60f) Lower tx fees 10x (#1632)
-- [`7ab175a8e`](https://github.com/dashpay/dash/commit/7ab175a8e) Ensure Dash wallets < 0.12.2 can't open HD wallets (#1638)
+- [`7ab175a8e`](https://github.com/dashpay/dash/commit/7ab175a8e) Ensure Diabase wallets < 0.12.2 can't open HD wallets (#1638)
 - [`7efa5e79d`](https://github.com/dashpay/dash/commit/7efa5e79d) fix fallback fee (#1649)
 
 ### RPC:
@@ -380,7 +380,7 @@ As well as Bitcoin Core Developers and everyone that submitted issues or helped 
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Diabase was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -392,7 +392,7 @@ Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
 Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9, Darkcoin was rebranded
-to Dash.
+to Diabase.
 
 Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 

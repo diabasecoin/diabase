@@ -26,7 +26,7 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://www.dash.org/
+Homepage: https://www.diabase.com/
 Vcs-Git: git://github.com/dashpay/dash.git
 Vcs-Browser: https://github.com/dashpay/dash
 
@@ -34,8 +34,8 @@ Package: dashd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ Diabase is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Diabase uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. Diabase Core
  is the name of the open source software which enables the use of this currency.
@@ -47,20 +47,20 @@ Package: dash-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ Diabase is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Diabase uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. Diabase Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides Dash-Qt, a GUI for Dash based on Qt.
+ This package provides Diabase-Qt, a GUI for Diabase based on Qt.
 
 Package: dash-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Dash is an experimental new digital currency that enables instant, private
- payments to anyone, anywhere in the world. Dash uses peer-to-peer
+ Diabase is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Diabase uses peer-to-peer
  technology to operate with no central authority: managing transactions
  and issuing money are carried out collectively by the network. Diabase Core
  is the name of the open source software which enables the use of this currency.

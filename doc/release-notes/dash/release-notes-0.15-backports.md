@@ -3,7 +3,7 @@
 - [`697d289eb`](https://github.com/dashpay/dash/commit/697d289eb) Merge #12392: Fix ignoring tx data requests when fPauseSend is set on a peer (#3225)
 - [`8c17c8163`](https://github.com/dashpay/dash/commit/8c17c8163) Remove light-hires theme as it's not required anymore
 - [`d9741fc63`](https://github.com/dashpay/dash/commit/d9741fc63) Merge #16254: qt: Set AA_EnableHighDpiScaling attribute early
-- [`df04cdcd2`](https://github.com/dashpay/dash/commit/df04cdcd2) Fix Dash specific docs and scripts
+- [`df04cdcd2`](https://github.com/dashpay/dash/commit/df04cdcd2) Fix Diabase specific docs and scripts
 - [`1ef70ac9e`](https://github.com/dashpay/dash/commit/1ef70ac9e) Merge #12607: depends: Remove ccache
 - [`5107582f2`](https://github.com/dashpay/dash/commit/5107582f2) Merge #11252: [P2P] When clearing addrman clear mapInfo and mapAddr. (#3171)
 - [`cf632029b`](https://github.com/dashpay/dash/commit/cf632029b) Merge #12804: [tests] Fix intermittent rpc_net.py failure.
@@ -144,7 +144,7 @@
 - [`1596b1dfa`](https://github.com/dashpay/dash/commit/1596b1dfa) Move -createwalletbackups=0 into test_node.py
 - [`4049754f4`](https://github.com/dashpay/dash/commit/4049754f4) Dashify test_node.py
 - [`96966e5b8`](https://github.com/dashpay/dash/commit/96966e5b8) Use TestNode.node_encrypt_wallet
-- [`cc124c99c`](https://github.com/dashpay/dash/commit/cc124c99c) Remove Dash specific leftovers of node.stop optimization
+- [`cc124c99c`](https://github.com/dashpay/dash/commit/cc124c99c) Remove Diabase specific leftovers of node.stop optimization
 - [`f55da3aa5`](https://github.com/dashpay/dash/commit/f55da3aa5) Merge #10711: [tests] Introduce TestNode
 - [`f7a679062`](https://github.com/dashpay/dash/commit/f7a679062) Merge #10854: Avoid using sizes on non-fixed-width types to derive protocol constants.
 - [`3eb0e1463`](https://github.com/dashpay/dash/commit/3eb0e1463) Fix rawtransaction.py test

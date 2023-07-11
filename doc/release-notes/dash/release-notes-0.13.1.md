@@ -3,7 +3,7 @@ Diabase Core version 0.13.1.0
 
 Release is now available from:
 
-  <https://www.dash.org/downloads/#wallets>
+  <https://www.diabase.com/downloads/#wallets>
 
 This is a new minor version release, bringing various bugfixes and other improvements.
 
@@ -20,7 +20,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux). If you upgrade after DIP0003 activation you will
 have to reindex (start with -reindex-chainstate or -reindex) to make sure
 your wallet has all the new data synced (only if you were using version < 0.13).
@@ -85,7 +85,7 @@ See detailed [set of changes](https://github.com/dashpay/dash/compare/v0.13.0.0.
 - [`e18916386`](https://github.com/dashpay/dash/commit/e18916386) Add missing help text for `operatorPayoutAddress` (#2679)
 - [`0d8cc0761`](https://github.com/dashpay/dash/commit/0d8cc0761) Invoke CheckSpecialTx after all normal TX checks have passed (#2673)
 - [`592210daf`](https://github.com/dashpay/dash/commit/592210daf) Bump block stats when adding commitment tx into block (#2654)
-- [`070ad103f`](https://github.com/dashpay/dash/commit/070ad103f) Wait for script checks to finish before messing with txes in Dash-specific way (#2652)
+- [`070ad103f`](https://github.com/dashpay/dash/commit/070ad103f) Wait for script checks to finish before messing with txes in Diabase-specific way (#2652)
 - [`3a3586d5a`](https://github.com/dashpay/dash/commit/3a3586d5a) Use helper function to produce help text for params of `protx` rpcs (#2649)
 - [`332e0361c`](https://github.com/dashpay/dash/commit/332e0361c) Add checkbox to show only masternodes the wallet has keys for (#2627)
 
@@ -106,7 +106,7 @@ As well as everyone that submitted issues and reviewed pull requests.
 Older releases
 ==============
 
-Dash was previously known as Darkcoin.
+Diabase was previously known as Darkcoin.
 
 Darkcoin tree 0.8.x was a fork of Litecoin tree 0.8, original name was XCoin
 which was first released on Jan/18/2014.
@@ -118,7 +118,7 @@ Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
 Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
-Darkcoin was rebranded to Dash.
+Darkcoin was rebranded to Diabase.
 
 Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 

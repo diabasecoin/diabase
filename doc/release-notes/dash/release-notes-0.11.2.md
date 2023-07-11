@@ -37,7 +37,7 @@ BIP 66: strict DER encoding for signatures
 
 Diabase Core 0.11.2 implements BIP 66, which introduces block version 3, and a
 new consensus rule, which prohibits non-DER signatures. Such transactions have
-been non-standard since Dash 0.8, but were technically still permitted
+been non-standard since Diabase 0.8, but were technically still permitted
 inside blocks.
 
 This change breaks the dependency on OpenSSL's signature parsing, and is
@@ -63,7 +63,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Dash-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Diabase-Qt (on Mac) or
 dashd/dash-qt (on Linux).
 
 

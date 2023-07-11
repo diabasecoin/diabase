@@ -584,7 +584,7 @@ def insert_cmd(argv):
 ################################################################################
 
 USAGE = """
-copyright_header.py - utilities for managing copyright headers of 'The Dash
+copyright_header.py - utilities for managing copyright headers of 'The Diabase
 Core developers' in repository source files.
 
 Usage:
