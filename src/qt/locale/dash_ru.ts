@@ -312,12 +312,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Произошла критическая ошибка. Дальнейшая безопасная работа Dash Core невозможна, программа будет закрыта.</translation>
+        <source>A fatal error occurred. Diabase Core can no longer continue safely and will quit.</source>
+        <translation>Произошла критическая ошибка. Дальнейшая безопасная работа Diabase Core невозможна, программа будет закрыта.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -376,8 +376,8 @@
         <translation>Закрыть приложение</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Показать информацию о Dash Core</translation>
+        <source>Show information about Diabase Core</source>
+        <translation>Показать информацию о Diabase Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1423,8 +1423,8 @@
         <translation>Целевой баланс</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Dash Core на роутере. Работает только в том случае, если Ваш роутер поддерживает UPnP и данная функция включена.</translation>
+        <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для Diabase Core на роутере. Работает только в том случае, если Ваш роутер поддерживает UPnP и данная функция включена.</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -4581,8 +4581,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>смотрите debug.log для получения подробной информации.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

@@ -1,4 +1,4 @@
-Dash Core version 0.16
+Diabase Core version 0.16
 ======================
 
 Release is now available from:
@@ -30,7 +30,7 @@ or -reindex) to make sure your wallet has all the new data synced. Upgrading
 from version 0.13 should not require any additional actions.
 
 When upgrading from a version prior to 0.14.0.3, the
-first startup of Dash Core will run a migration process which can take a few
+first startup of Diabase Core will run a migration process which can take a few
 minutes to finish. After the migration, a downgrade to an older version is only
 possible with a reindex (or reindex-chainstate).
 
@@ -176,7 +176,7 @@ and then eventually PoSe banned.
 
 Network performance improvements
 --------------------------------
-This version of Dash Core includes multiple optimizations to the network and p2p message
+This version of Diabase Core includes multiple optimizations to the network and p2p message
 handling code. The most important one is the introduction of `epoll` on linux-based
 systems. This removes most of the CPU overhead caused by the sub-optimal use of `select`,
 which could easily use up 50-80% of the CPU time spent in the network thread when many
@@ -206,9 +206,9 @@ For backwards compatibility, wallet paths that are names of existing data files
 in the `--walletdir` directory will continue to be accepted and interpreted the
 same as before.
 
-When Dash Core is not started with any `--wallet=<path>` options, the name of
+When Diabase Core is not started with any `--wallet=<path>` options, the name of
 the default wallet returned by `getwalletinfo` and `listwallets` RPCs is
-now the empty string `""` instead of `"wallet.dat"`. If Dash Core is started
+now the empty string `""` instead of `"wallet.dat"`. If Diabase Core is started
 with any `--wallet=<path>` options, there is no change in behavior, and the
 name of any wallet is just its `<path>` string.
 
@@ -253,7 +253,7 @@ This feature specifically should help users who had font size/scaling issues pre
 
 For advanced users and developers there is a new way to control the wallet's look
 by specifying a path to custom css files via `--custom-css-dir`. Additionally, the new
-`--debug-ui` will force Dash Core to reload the custom css files as soon as they get updated
+`--debug-ui` will force Diabase Core to reload the custom css files as soon as they get updated
 which makes it possible to see and debug all css adjustments live in the running GUI.
 
 From now on the "Pay To" field in "Send" and "PrivateSend" tabs also accepts Dash URIs.
@@ -275,7 +275,7 @@ and was also removed in this version.
 
 Build system
 ------------
-The minimum version of the GCC compiler required to compile Dash Core is now 4.8.
+The minimum version of the GCC compiler required to compile Diabase Core is now 4.8.
 The minimum version of Qt is now 5.5.1. Some packages in `depends/` as well as
 `secp256k1` and `leveldb` subtrees were updated to newer versions.
 
@@ -344,7 +344,7 @@ Backports from Bitcoin Core 0.16
 --------------------------------
 
 Most of the changes between Bitcoin Core 0.15 and Bitcoin Core 0.16 have been
-backported into Dash Core 0.16. We only excluded backports which do not align
+backported into Diabase Core 0.16. We only excluded backports which do not align
 with Dash, like SegWit or RBF related changes.
 
 You can read about changes brought by backporting from Bitcoin Core 0.16 in
@@ -617,12 +617,12 @@ the 0.8.x tree and was first released on Mar/13/2014.
 Darkcoin tree 0.10.x used to be the closed source implementation of Darksend
 which was released open source on Sep/25/2014.
 
-Dash Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
+Diabase Core tree 0.11.x was a fork of Bitcoin Core tree 0.9,
 Darkcoin was rebranded to Dash.
 
-Dash Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
+Diabase Core tree 0.12.0.x was a fork of Bitcoin Core tree 0.10.
 
-Dash Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
+Diabase Core tree 0.12.1.x was a fork of Bitcoin Core tree 0.12.
 
 These release are considered obsolete. Old release notes can be found here:
 

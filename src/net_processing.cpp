@@ -56,7 +56,7 @@
 #include <statsd_client.h>
 
 #if defined(NDEBUG)
-# error "Dash Core cannot be compiled without assertions."
+# error "Diabase Core cannot be compiled without assertions."
 #endif
 
 /** Maximum number of in-flight objects from a peer */

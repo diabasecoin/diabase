@@ -260,12 +260,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. Dash Core nu mai poate continua în siguranță și se va opri.</translation>
+        <source>A fatal error occurred. Diabase Core can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. Diabase Core nu mai poate continua în siguranță și se va opri.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -324,8 +324,8 @@
         <translation>Închide aplicaţia</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Arată informații despre Dash Core</translation>
+        <source>Show information about Diabase Core</source>
+        <translation>Arată informații despre Diabase Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1229,8 +1229,8 @@
         <translation>Dacă dezactivezi cheltuirea restului neconfirmat, restul dintr-o tranzacție&lt;br/&gt;nu poate fi utilizat până când tranzacția nu are cel puțin o confirmare.&lt;br/&gt;Acest lucru afectează de asemenea modul în care se calculează soldul tău.</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul client Dash Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
+        <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul client Diabase Core de pe router. Asta funcționează numai atunci când routerul dvs. acceptă UPnP și este activat.</translation>
     </message>
     <message>
         <source>Connect to the Dash network through a SOCKS5 proxy.</source>
@@ -3919,8 +3919,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>vezi debug.log pentru detalii.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

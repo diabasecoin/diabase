@@ -1,7 +1,7 @@
-Contributing to Dash Core
+Contributing to Diabase Core
 ============================
 
-The Dash Core project operates an open contributor model where anyone is
+The Diabase Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -161,11 +161,11 @@ where possible keep them short, uncomplex and easy to verify.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the Dash Core project (and related
+The following applies to code changes to the Diabase Core project (and related
 projects such as libsecp256k1), and is not to be confused with overall Dash
 Network Protocol consensus changes.
 
-Whether a pull request is merged into Dash Core rests with the project merge
+Whether a pull request is merged into Diabase Core rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -250,7 +250,7 @@ function gfd() {
 
 ### Finding Reviewers
 
-The review process is normally fairly responsive on the Dash Core repository, however
+The review process is normally fairly responsive on the Diabase Core repository, however
 this might not always be the case. If you find that you've been waiting
 for a pull request to be given attention for several months, there may be a number
 of reasons for this, some of which you can do something about:
@@ -282,7 +282,7 @@ of reasons for this, some of which you can do something about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Dash Core release.
+The project leader is the release manager for each Diabase Core release.
 
 Copyright
 ---------

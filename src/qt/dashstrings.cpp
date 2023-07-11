@@ -9,7 +9,7 @@
 #define UNUSED
 #endif
 static const char UNUSED *dash_strings[] = {
-QT_TRANSLATE_NOOP("dash-core", "Dash Core"),
+QT_TRANSLATE_NOOP("dash-core", "Diabase Core"),
 QT_TRANSLATE_NOOP("dash-core", "The %s developers"),
 QT_TRANSLATE_NOOP("dash-core", ""
 "%s file contains all private keys from this wallet. Do not share it with "

@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the Dash Core software.
+This document provides guidelines for internationalization of the Diabase Core software.
 
 How to translate?
 ------------------

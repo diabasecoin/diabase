@@ -260,12 +260,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Diabase Core can no longer continue safely and will quit.</source>
         <translation>重大なエラーが発生しました。 Dash Coreは安全に続行できなくなり終了します。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -324,7 +324,7 @@
         <translation>アプリケーションを終了</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
+        <source>Show information about Diabase Core</source>
         <translation>Dash Coreについての情報を表示</translation>
     </message>
     <message>
@@ -1186,7 +1186,7 @@
         <translation>もし未確認のチェンジを使用することを無効にする場合&lt;br/&gt;トランザクションから生じたチェンジはそのトランザクションが少なくとも一回コンファメーションがないと使用できません。&lt;br/&gt;これはまたあなたのウォレットの残高の計算にも影響を与えます。</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動的にルーターのDash Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
@@ -3828,7 +3828,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>詳細はdebug.logを参照してください。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
+        <source>Diabase Core</source>
         <translation>Dashコア</translation>
     </message>
     <message>

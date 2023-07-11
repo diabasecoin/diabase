@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Diabase Core can no longer continue safely and will quit.</source>
         <translation>发生严重错误。Dash Core钱包不再能安全地运行下去，程序将会关闭。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,7 +372,7 @@
         <translation>退出程序</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
+        <source>Show information about Diabase Core</source>
         <translation>显示关于Dash Core信息</translation>
     </message>
     <message>
@@ -1399,7 +1399,7 @@
         <translation>目标余额</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自动在路由器打开Dash Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
     </message>
     <message>
@@ -4549,8 +4549,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>详细信息请参阅debug.log。</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

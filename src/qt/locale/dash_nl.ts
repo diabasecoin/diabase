@@ -308,12 +308,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>A fatal error occurred. Dash Core can no longer continue safely and will quit.</source>
-        <translation>Er heeft zich een fatale fout voorgedaan. Dash Core kan niet veilig worden voortgezet en zal worden afgesloten.</translation>
+        <source>A fatal error occurred. Diabase Core can no longer continue safely and will quit.</source>
+        <translation>Er heeft zich een fatale fout voorgedaan. Diabase Core kan niet veilig worden voortgezet en zal worden afgesloten.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -372,8 +372,8 @@
         <translation>Sluit applicatie</translation>
     </message>
     <message>
-        <source>Show information about Dash Core</source>
-        <translation>Toon informatie over Dash Core</translation>
+        <source>Show information about Diabase Core</source>
+        <translation>Toon informatie over Diabase Core</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -1399,7 +1399,7 @@
         <translation>Target Saldo</translation>
     </message>
     <message>
-        <source>Automatically open the Dash Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Open automatisch de Dash client poort op de router. Dit werkt alleen als uw router UPnP ondersteunt en dit is ingeschakeld.</translation>
     </message>
     <message>
@@ -4551,8 +4551,8 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het Dash netwer
         <translation>zie debug.log voor meer informatie.</translation>
     </message>
     <message>
-        <source>Dash Core</source>
-        <translation>Dash Core</translation>
+        <source>Diabase Core</source>
+        <translation>Diabase Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

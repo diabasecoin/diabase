@@ -338,7 +338,7 @@
 - [`f831710f4`](https://github.com/dashpay/dash/commit/f831710f4) Merge #9139: Change sync_blocks to pick smarter maxheight (on top of #9196)
 - [`b6ea01e07`](https://github.com/dashpay/dash/commit/b6ea01e07) Remove namespace alert_tests when including alert test data
 - [`7939a23e3`](https://github.com/dashpay/dash/commit/7939a23e3) Use std::move when calling MakeTransactionRef
-- [`d0a39fbcf`](https://github.com/dashpay/dash/commit/d0a39fbcf) Use "Dash Core" instead of "dash-core" in some places and Dashify
+- [`d0a39fbcf`](https://github.com/dashpay/dash/commit/d0a39fbcf) Use "Diabase Core" instead of "dash-core" in some places and Dashify
 - [`9170c0e9c`](https://github.com/dashpay/dash/commit/9170c0e9c) Fix rpc tests
 - [`76d7730a5`](https://github.com/dashpay/dash/commit/76d7730a5) Dashify ISSUE_TEMPLATE.md
 - [`07cd44c0e`](https://github.com/dashpay/dash/commit/07cd44c0e) Use MakeTransactionRef in CreateDevNetGenesisBlock

@@ -17,7 +17,7 @@
 - [`8700f460e3`](https://github.com/dashpay/dash/commit/8700f460e3) Merge #12305: [docs] [refactor] Add help messages for datadir path mangling
 - [`28a8db3ca7`](https://github.com/dashpay/dash/commit/28a8db3ca7) Fix sourceFile
 - [`97907b051f`](https://github.com/dashpay/dash/commit/97907b051f) Fix autobackup functionality
-- [`6f4260f860`](https://github.com/dashpay/dash/commit/6f4260f860) bitcoin -> Dash Core
+- [`6f4260f860`](https://github.com/dashpay/dash/commit/6f4260f860) bitcoin -> Diabase Core
 - [`02dfb89b02`](https://github.com/dashpay/dash/commit/02dfb89b02) fix test 50 -> 500
 - [`4aa8a9a206`](https://github.com/dashpay/dash/commit/4aa8a9a206) resolve DEFAULT_WALLET_DAT being removed
 - [`7999080c04`](https://github.com/dashpay/dash/commit/7999080c04) Merge #11687: External wallet files
