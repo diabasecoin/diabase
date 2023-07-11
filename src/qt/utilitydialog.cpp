@@ -133,7 +133,7 @@ You retain control of your money at all times.<hr> \
 <b>The %1 process works like this:</b>\
 <ol type=\"1\"> \
 <li>%1 begins by breaking your transaction inputs down into standard denominations. \
-These denominations are 0.001 DASH, 0.01 DASH, 0.1 DASH, 1 DASH and 10 DASH -- sort of like the paper money you use every day.</li> \
+These denominations are 0.001 DIAC, 0.01 DIAC, 0.1 DIAC, 1 DIAC and 10 DIAC -- sort of like the paper money you use every day.</li> \
 <li>Your wallet then sends requests to specially configured software nodes on the network, called \"masternodes.\" \
 These masternodes are informed then that you are interested in mixing a certain denomination. \
 No identifiable information is sent to the masternodes, so they never know \"who\" you are.</li> \
