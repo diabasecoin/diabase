@@ -45,14 +45,14 @@
 #include <QUrlQuery>
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("diabase:");
+const QString BITCOIN_IPC_PREFIX("dash:");
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
 // BIP71 payment protocol media types
-const char* BIP71_MIMETYPE_PAYMENT = "application/diabase-payment";
-const char* BIP71_MIMETYPE_PAYMENTACK = "application/diabase-paymentack";
-const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/diabase-paymentrequest";
+const char* BIP71_MIMETYPE_PAYMENT = "application/dash-payment";
+const char* BIP71_MIMETYPE_PAYMENTACK = "application/dash-paymentack";
+const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/dash-paymentrequest";
 
 struct X509StoreDeleter {
       void operator()(X509_STORE* b) {
@@ -76,7 +76,7 @@ namespace // Anon namespace
 //
 static QString ipcServerName()
 {
-    QString name("DiabaseQt");
+    QString name("DashQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -396,7 +396,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("diabase://", Qt::CaseInsensitive))
+    if (s.startsWith("dash://", Qt::CaseInsensitive))
     {
         Q_EMIT message(tr("URI handling"), tr("'diabase://' is not a valid URI. Use 'diabase:' instead."),
             CClientUIInterface::MSG_ERROR);
@@ -552,7 +552,7 @@ bool PaymentServer::processPaymentRequest(const PaymentRequestPlus& request, Sen
             addresses.append(QString::fromStdString(EncodeDestination(dest)));
         }
         else if (!recipient.authenticatedMerchant.isEmpty()) {
-            // Unauthenticated payment requests to custom diabase addresses are not supported
+            // Unauthenticated payment requests to custom dash addresses are not supported
             // (there is no good way to tell the user where they are paying in a way they'd
             // have a chance of understanding).
             Q_EMIT message(tr("Payment request rejected"),

@@ -164,10 +164,10 @@ UniValue getcoinjoininfo(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
     { //  category              name                      actor (function)         argNames
         //  --------------------- ------------------------  ---------------------------------
-        { "diabase",               "getpoolinfo",            &getpoolinfo,            {} },
-        { "diabase",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
+        { "dash",               "getpoolinfo",            &getpoolinfo,            {} },
+        { "dash",               "getcoinjoininfo",        &getcoinjoininfo,        {} },
 #ifdef ENABLE_WALLET
-        { "diabase",               "coinjoin",               &coinjoin,               {} },
+        { "dash",               "coinjoin",               &coinjoin,               {} },
 #endif // ENABLE_WALLET
 };
 

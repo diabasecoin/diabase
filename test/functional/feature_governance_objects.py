@@ -2,9 +2,9 @@
 # Copyright (c) 2018-2020 The Diabase Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Tests around diabase governance objects."""
+"""Tests around dash governance objects."""
 
-from test_framework.test_framework import DiabaseTestFramework
+from test_framework.test_framework import DashTestFramework
 from test_framework.util import *
 from test_framework.messages import *
 
@@ -19,9 +19,9 @@ def validate_object(prepared, rpc_prepared):
     assert_equal(prepared["data"], rpc_prepared["data"])
 
 
-class DiabaseGovernanceTest (DiabaseTestFramework):
+class DashGovernanceTest (DashTestFramework):
     def set_test_params(self):
-        self.set_diabase_test_params(2, 1)
+        self.set_dash_test_params(2, 1)
 
     def prepare_object(self, object_type, parent_hash, creation_time, revision, name, amount):
         proposal_rev = revision
@@ -97,4 +97,4 @@ class DiabaseGovernanceTest (DiabaseTestFramework):
 
 
 if __name__ == '__main__':
-    DiabaseGovernanceTest().main()
+    DashGovernanceTest().main()

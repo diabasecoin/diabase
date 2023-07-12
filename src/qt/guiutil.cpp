@@ -292,7 +292,7 @@ void setupAppearance(QWidget* parent, OptionsModel* model)
         QDialog dlg(parent);
         dlg.setObjectName("AppearanceSetup");
         dlg.setWindowTitle(QObject::tr("Appearance Setup"));
-        dlg.setWindowIcon(QIcon(":icons/diabase"));
+        dlg.setWindowIcon(QIcon(":icons/dash"));
         // And the widgets we add to it
         QLabel lblHeading(QObject::tr("Please choose your preferred settings for the appearance of %1").arg(QObject::tr(PACKAGE_NAME)), &dlg);
         lblHeading.setObjectName("lblHeading");
@@ -330,7 +330,7 @@ void setupAppearance(QWidget* parent, OptionsModel* model)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no diabase: URI
-    if(!uri.isValid() || uri.scheme() != QString("diabase"))
+    if(!uri.isValid() || uri.scheme() != QString("dash"))
         return false;
 
     SendCoinsRecipient rv;
@@ -404,7 +404,7 @@ bool validateBitcoinURI(const QString& uri)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("diabase:%1").arg(info.address);
+    QString ret = QString("dash:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -610,7 +610,7 @@ void openConfigfile()
 {
     fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", BITCOIN_CONF_FILENAME));
 
-    /* Open diabase.conf with the associated application */
+    /* Open dash.conf with the associated application */
     if (fs::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -869,8 +869,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "diabasecore.desktop";
-    return GetAutostartDir() / strprintf("diabasecore-%s.lnk", chain);
+        return GetAutostartDir() / "dashcore.desktop";
+    return GetAutostartDir() / strprintf("dashcore-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -910,7 +910,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = gArgs.GetChainName();
-        // Write a diabasecore.desktop file to the autostart directory:
+        // Write a dashcore.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
@@ -1136,7 +1136,7 @@ void loadStyleSheet(bool fForceUpdate)
 
         std::vector<QString> vecFiles;
         // If light/dark theme is used load general styles first
-        if (diabaseThemeActive()) {
+        if (dashThemeActive()) {
             vecFiles.push_back(pathToFile(generalTheme));
         }
         vecFiles.push_back(pathToFile(getActiveTheme()));
@@ -1723,7 +1723,7 @@ QString getActiveTheme()
     return theme;
 }
 
-bool diabaseThemeActive()
+bool dashThemeActive()
 {
     QSettings settings;
     QString theme = settings.value("theme", defaultTheme).toString();
@@ -1742,7 +1742,7 @@ void disableMacFocusRect(const QWidget* w)
 #ifdef Q_OS_MAC
     for (const auto& c : w->findChildren<QWidget*>()) {
         if (c->testAttribute(Qt::WA_MacShowFocusRect)) {
-            c->setAttribute(Qt::WA_MacShowFocusRect, !diabaseThemeActive());
+            c->setAttribute(Qt::WA_MacShowFocusRect, !dashThemeActive());
             setRectsDisabled.emplace(c);
         }
     }
@@ -1756,7 +1756,7 @@ void updateMacFocusRects()
     auto it = setRectsDisabled.begin();
     while (it != setRectsDisabled.end()) {
         if (allWidgets.contains(*it)) {
-            (*it)->setAttribute(Qt::WA_MacShowFocusRect, !diabaseThemeActive());
+            (*it)->setAttribute(Qt::WA_MacShowFocusRect, !dashThemeActive());
             ++it;
         } else {
             it = setRectsDisabled.erase(it);

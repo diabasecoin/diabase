@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import DiabaseTestFramework
+from test_framework.test_framework import DashTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error
 
 '''
@@ -14,9 +14,9 @@ Tests mnauth RPC command
 '''
 
 
-class FakeMNAUTHTest(DiabaseTestFramework):
+class FakeMNAUTHTest(DashTestFramework):
     def set_test_params(self):
-        self.set_diabase_test_params(2, 1, fast_dip3_enforcement=True)
+        self.set_dash_test_params(2, 1, fast_dip3_enforcement=True)
 
     def run_test(self):
 

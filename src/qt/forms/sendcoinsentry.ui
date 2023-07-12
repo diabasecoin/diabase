@@ -1256,7 +1256,7 @@
   <tabstop>deleteButton_s</tabstop>
  </tabstops>
  <resources>
-  <include location="../diabase.qrc"/>
+  <include location="../dash.qrc"/>
  </resources>
  <connections/>
 </ui>

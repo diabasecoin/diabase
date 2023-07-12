@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/diabase-config.h>
+#include <config/dash-config.h>
 #endif
 
 #include <net.h>
