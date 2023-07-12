@@ -5,7 +5,7 @@
 #include <util.h>
 
 #include <support/allocators/secure.h>
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <memory>
 

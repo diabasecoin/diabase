@@ -49,7 +49,7 @@ def sha256(s):
 def hash256(s):
     return sha256(sha256(s))
 
-def diabasehash(s):
+def dashhash(s):
     return dash_hash.getPoWHash(s)
 
 def ser_compact_size(l):
@@ -200,7 +200,7 @@ def FromHex(obj, hex_string):
 def ToHex(obj):
     return bytes_to_hex_str(obj.serialize())
 
-# Objects that map to diabased objects, which can be serialized/deserialized
+# Objects that map to dashd objects, which can be serialized/deserialized
 
 class CService():
     def __init__(self):
@@ -486,8 +486,8 @@ class CBlockHeader():
             r += struct.pack("<I", self.nTime)
             r += struct.pack("<I", self.nBits)
             r += struct.pack("<I", self.nNonce)
-            self.sha256 = uint256_from_str(diabasehash(r))
-            self.hash = encode(diabasehash(r)[::-1], 'hex_codec').decode('ascii')
+            self.sha256 = uint256_from_str(dashhash(r))
+            self.hash = encode(dashhash(r)[::-1], 'hex_codec').decode('ascii')
 
     def rehash(self):
         self.sha256 = None
@@ -1351,7 +1351,7 @@ class msg_headers():
         self.headers = headers if headers is not None else []
 
     def deserialize(self, f):
-        # comment in diabased indicates these should be deserialized as blocks
+        # comment in dashd indicates these should be deserialized as blocks
         blocks = deser_vector(f, CBlock)
         for x in blocks:
             self.headers.append(CBlockHeader(x))

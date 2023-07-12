@@ -9,7 +9,7 @@
 #include <sync.h>
 #include <utilstrencodings.h>
 #include <utilmoneystr.h>
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <stdint.h>
 #include <vector>

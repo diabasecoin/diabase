@@ -6,7 +6,7 @@ from test_framework.blocktools import create_block, create_coinbase, get_mastern
 from test_framework.mininode import P2PDataStore, network_thread_start
 from test_framework.messages import CTxOut, FromHex, CCbTx, CTransaction, ToHex
 from test_framework.script import CScript
-from test_framework.test_framework import DiabaseTestFramework
+from test_framework.test_framework import DashTestFramework
 from test_framework.util import assert_equal, get_bip9_status, hex_str_to_bytes
 
 '''
@@ -17,10 +17,10 @@ Checks block reward reallocation correctness
 '''
 
 
-class BlockRewardReallocationTest(DiabaseTestFramework):
+class BlockRewardReallocationTest(DashTestFramework):
     def set_test_params(self):
-        self.set_diabase_test_params(2, 1, fast_dip3_enforcement=True)
-        self.set_diabase_dip8_activation(450)
+        self.set_dash_test_params(2, 1, fast_dip3_enforcement=True)
+        self.set_dash_dip8_activation(450)
 
     # 536870912 == 0x20000000, i.e. not signalling for anything
     def create_test_block(self, version=536870912):

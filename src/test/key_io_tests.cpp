@@ -9,7 +9,7 @@
 #include <key_io.h>
 #include <script/script.h>
 #include <utilstrencodings.h>
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <boost/test/unit_test.hpp>
 

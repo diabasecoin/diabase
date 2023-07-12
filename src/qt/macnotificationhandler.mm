@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.diabase.Diabase-Qt";
+        return @"org.dash.Diabase-Qt";
     } else {
         return [self __bundleIdentifier];
     }

@@ -9,7 +9,7 @@
 #include <key_io.h>
 #include <netbase.h>
 
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/test/unit_test.hpp>

@@ -29,7 +29,7 @@ class ConfArgsTest(BitcoinTestFramework):
         self.nodes[0].assert_start_raises_init_error(['-datadir=' + new_data_dir], 'Error: Specified data directory "' + re.escape(new_data_dir) + '" does not exist.')
 
         # Check that using non-existent datadir in conf file fails
-        conf_file = os.path.join(default_data_dir, "diabase.conf")
+        conf_file = os.path.join(default_data_dir, "dash.conf")
 
         # datadir needs to be set before [chain] section
         conf_file_contents = open(conf_file, encoding='utf8').read()

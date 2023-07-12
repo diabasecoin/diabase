@@ -12,10 +12,10 @@ static const int MODEL_UPDATE_DELAY = 250;
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* DiabaseGUI -- Size of icons in status bar */
+/* DashGUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 18;
 
-/* DiabaseGUI -- Size of button icons e.g. in SendCoinEntry or SignVerifyMessageDialog */
+/* DashGUI -- Size of button icons e.g. in SendCoinEntry or SignVerifyMessageDialog */
 static const int BUTTON_ICONSIZE = 23;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -42,7 +42,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 90
 
 #define QAPP_ORG_NAME "Diabase"
-#define QAPP_ORG_DOMAIN "diabase.org"
+#define QAPP_ORG_DOMAIN "dash.org"
 #define QAPP_APP_NAME_DEFAULT "Diabase-Qt"
 #define QAPP_APP_NAME_TESTNET "Diabase-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Diabase-Qt-%s"
