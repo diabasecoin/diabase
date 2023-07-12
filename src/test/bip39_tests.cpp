@@ -8,7 +8,7 @@
 #include <key_io.h>
 #include <util.h>
 #include <utilstrencodings.h>
-#include <test/test_dash.h>
+#include <test/test_diabase.h>
 #include <bip39.h>
 
 #include <boost/test/unit_test.hpp>

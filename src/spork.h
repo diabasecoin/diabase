@@ -193,7 +193,7 @@ public:
         }
         // we don't serialize pubkey ids because pubkeys should be
         // hardcoded or be setted with cmdline or options, should
-        // not reuse pubkeys from previous dashd run
+        // not reuse pubkeys from previous diabased run
         LOCK(cs);
         READWRITE(mapSporksByHash);
         READWRITE(mapSporksActive);

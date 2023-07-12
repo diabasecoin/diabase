@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/dash-config.h>
+#include <config/diabase-config.h>
 #endif
 
 #include <qt/rpcconsole.h>
@@ -1296,7 +1296,7 @@ void RPCConsole::setButtonIcons()
 void RPCConsole::reloadThemedWidgets()
 {
     clear();
-    ui->promptLabel->setHidden(GUIUtil::dashThemeActive());
+    ui->promptLabel->setHidden(GUIUtil::diabaseThemeActive());
     // Adjust button icon colors on theme changes
     setButtonIcons();
 }
