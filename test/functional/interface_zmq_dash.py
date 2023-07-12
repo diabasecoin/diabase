@@ -2,7 +2,7 @@
 # Copyright (c) 2018-2021 The Diabase Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test the dash specific ZMQ notification interfaces."""
+"""Test the diabase specific ZMQ notification interfaces."""
 
 import configparser
 from enum import Enum
@@ -17,7 +17,7 @@ finally:
     pass
 
 from test_framework.test_framework import (
-     DashTestFramework, skip_if_no_bitcoind_zmq, skip_if_no_py3_zmq)
+     DiabaseTestFramework, skip_if_no_bitcoind_zmq, skip_if_no_py3_zmq)
 from test_framework.mininode import P2PInterface, network_thread_start
 from test_framework.util import assert_equal, assert_raises_rpc_error, bytes_to_hex_str
 from test_framework.messages import (
@@ -85,7 +85,7 @@ class TestP2PConn(P2PInterface):
                 self.send_message(self.txes[inv.hash])
 
 
-class DashZMQTest (DashTestFramework):
+class DiabaseZMQTest (DiabaseTestFramework):
     def set_test_params(self):
         # That's where the zmq publisher will listen for subscriber
         self.address = "tcp://127.0.0.1:28333"
@@ -94,10 +94,10 @@ class DashZMQTest (DashTestFramework):
         node0_extra_args.append("-whitelist=127.0.0.1")
         node0_extra_args.append("-watchquorums")  # have to watch quorums to receive recsigs and trigger zmq
 
-        self.set_dash_test_params(4, 3, fast_dip3_enforcement=True, extra_args=[node0_extra_args, [], [], []])
+        self.set_diabase_test_params(4, 3, fast_dip3_enforcement=True, extra_args=[node0_extra_args, [], [], []])
 
     def run_test(self):
-        # Check that dashd has been built with ZMQ enabled.
+        # Check that diabased has been built with ZMQ enabled.
         config = configparser.ConfigParser()
         config.read_file(open(self.options.configfile))
 
@@ -121,7 +121,7 @@ class DashZMQTest (DashTestFramework):
             # Wait a moment to avoid subscribing to recovered sig in the test before the one from the chainlock
             # has been sent which leads to test failure.
             time.sleep(1)
-            # Test all dash related ZMQ publisher
+            # Test all diabase related ZMQ publisher
             self.test_recovered_signature_publishers()
             self.test_chainlock_publishers()
             self.test_instantsend_publishers()
@@ -385,4 +385,4 @@ class DashZMQTest (DashTestFramework):
 
 
 if __name__ == '__main__':
-    DashZMQTest().main()
+    DiabaseZMQTest().main()
