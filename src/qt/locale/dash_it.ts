@@ -344,8 +344,8 @@
         <translation>&amp;Ricevi</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Richieste di pagamenti (genera codici QR e dash: URLs)</translation>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
+        <translation>Richieste di pagamenti (genera codici QR e diabase: URLs)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -536,8 +536,8 @@
         <translation>Apri &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Apri un dash: URI o una richiesta di pagamento</translation>
+        <source>Open a diabase: URI or payment request</source>
+        <translation>Apri un diabase: URI o una richiesta di pagamento</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1835,8 +1835,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>Impossibile avviare dash: gestore click-to-pay</translation>
+        <source>Cannot start diabase: click-to-pay handler</source>
+        <translation>Impossibile avviare diabase: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1844,7 +1844,7 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <source>'dash://' is not a valid URI. Use 'dash:' instead.</source>
-        <translation>"dash: //" non è un URI valido. Utilizza  "dash:".</translation>
+        <translation>"diabase: //" non è un URI valido. Utilizza  "dash:".</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Messaggio:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>Un messaggio allegato con l'URI dash che verrà memorizzato nella transazione per il tuo referente. Nota: questo messaggio non verrà inviato attraverso il network Diabase.</translation>
     </message>
     <message>

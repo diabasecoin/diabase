@@ -344,7 +344,7 @@
         <translation>&amp;Al</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
         <translation>Ödeme talep et (QR kodu ve Diabase URI'si oluşturur)</translation>
     </message>
     <message>
@@ -536,7 +536,7 @@
         <translation>&amp;URI Aç...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a diabase: URI or payment request</source>
         <translation>Bir Diabase: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
@@ -1835,7 +1835,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start diabase: click-to-pay handler</source>
         <translation>Diabase başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>Referans için Diabase: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Diabase ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>

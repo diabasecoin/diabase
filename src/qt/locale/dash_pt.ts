@@ -344,7 +344,7 @@
         <translation>&amp;Receber</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
         <translation>Solicitações de pagamentos (gera códigos QR e Diabase: URIs)</translation>
     </message>
     <message>
@@ -536,7 +536,7 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a diabase: URI or payment request</source>
         <translation>Abrir um Diabase: URI ou cobrança</translation>
     </message>
     <message>
@@ -1835,7 +1835,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Erro no pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start diabase: click-to-pay handler</source>
         <translation>Não foi possível iniciar Diabase: manipulador click-to-pay</translation>
     </message>
     <message>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mensagem:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>A mensagem que foi anexada ao Diabase: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Diabase.</translation>
     </message>
     <message>

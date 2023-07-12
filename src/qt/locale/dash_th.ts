@@ -344,7 +344,7 @@
         <translation>&amp;รับ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
         <translation>เรียกเก็บการชำระเงิน (สร้างคิว อาร์ โค้ด QR codes และแหล่งที่มาของ Diabase: URIs)</translation>
     </message>
     <message>
@@ -536,7 +536,7 @@
         <translation>เปิด &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a diabase: URI or payment request</source>
         <translation>เปิด Diabase: URI หรือคำขอการชำระเงิน</translation>
     </message>
     <message>
@@ -1835,7 +1835,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>คำขอการชำระเงินผิดพลาด</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start diabase: click-to-pay handler</source>
         <translation>ไม่สามารถเริ่มต้น Diabase: คลิกเพื่อจ่ายเงิน</translation>
     </message>
     <message>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>ข้อความ: </translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>ข้อความที่แนบมาไปยัง Diabase: URI ซึ่งจะถูกเก็บไว้กับธุรกรรมเพื่อเป็นข้อมูลอ้างอิงของคุณ  หมายเหตุ: ข้อความนี้จะถูกส่งไปยังเครือข่าย Diabase </translation>
     </message>
     <message>

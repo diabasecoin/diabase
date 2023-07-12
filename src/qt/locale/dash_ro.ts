@@ -296,7 +296,7 @@
         <translation>P&amp;rimeşte</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
         <translation>Cereţi plăţi (generează coduri QR şi Diabase-uri: URls)</translation>
     </message>
     <message>
@@ -484,7 +484,7 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
+        <source>Open a diabase: URI or payment request</source>
         <translation>Deschidere Diabase: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
@@ -1605,7 +1605,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Eroare la cererea de plată</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
+        <source>Cannot start diabase: click-to-pay handler</source>
         <translation>Diabase nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
@@ -2713,7 +2713,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mesaj:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>un mesaj a fost ataşat la Diabase: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua Diabase.</translation>
     </message>
     <message>

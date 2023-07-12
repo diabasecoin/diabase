@@ -4,7 +4,7 @@ Debian
 This directory contains files used to package dashd/dash-qt
 for Debian-based Linux systems. If you compile dashd/dash-qt yourself, there are some useful files here.
 
-## dash: URI support ##
+## diabase: URI support ##
 
 
 dash-qt.desktop  (Gnome / Open Desktop)

@@ -446,8 +446,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
-        <translation>Request payments (generates QR codes and dash: URIs)</translation>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
+        <translation>Request payments (generates QR codes and diabase: URIs)</translation>
     </message>
     <message>
         <location line="+220"/>
@@ -686,8 +686,8 @@
     </message>
     <message>
         <location line="+1"/>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Open a dash: URI or payment request</translation>
+        <source>Open a diabase: URI or payment request</source>
+        <translation>Open a diabase: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2369,8 +2369,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="-396"/>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>Cannot start dash: click-to-pay handler</translation>
+        <source>Cannot start diabase: click-to-pay handler</source>
+        <translation>Cannot start diabase: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -4106,8 +4106,8 @@ https://www.transifex.com/projects/p/dash/</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
-        <translation>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</translation>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <translation>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</translation>
     </message>
     <message>
         <location line="+433"/>

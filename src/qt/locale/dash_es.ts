@@ -344,7 +344,7 @@
         <translation>&amp;Recibir</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dash: URIs)</source>
+        <source>Request payments (generates QR codes and diabase: URIs)</source>
         <translation>Solicitar pagos (genera códigos QR y URIs de Diabase)</translation>
     </message>
     <message>
@@ -536,8 +536,8 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
-        <source>Open a dash: URI or payment request</source>
-        <translation>Abrir un dash: URI o petición de pago</translation>
+        <source>Open a diabase: URI or payment request</source>
+        <translation>Abrir un diabase: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1835,8 +1835,8 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Error en solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start dash: click-to-pay handler</source>
-        <translation>No se pudo iniciar dash: manejador de pago-por-clic</translation>
+        <source>Cannot start diabase: click-to-pay handler</source>
+        <translation>No se pudo iniciar diabase: manejador de pago-por-clic</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -3155,7 +3155,7 @@ https://www.transifex.com/projects/p/dash/</translation>
         <translation>Mensaje:</translation>
     </message>
     <message>
-        <source>A message that was attached to the dash: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
+        <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
         <translation>Un mensaje que se adjuntó al Diabase: URI que será almacenada con la transacción para su referencia. Nota: Este mensaje no se enviará a través de la red Diabase.</translation>
     </message>
     <message>
