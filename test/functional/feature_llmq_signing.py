@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import *
 
 '''
@@ -14,10 +14,10 @@ Checks LLMQs signing sessions
 
 '''
 
-class LLMQSigningTest(DashTestFramework):
+class LLMQSigningTest(DiabaseTestFramework):
     def set_test_params(self):
-        self.set_dash_test_params(6, 5, fast_dip3_enforcement=True)
-        self.set_dash_llmq_test_params(5, 3)
+        self.set_diabase_test_params(6, 5, fast_dip3_enforcement=True)
+        self.set_diabase_llmq_test_params(5, 3)
 
     def add_options(self, parser):
         parser.add_option("--spork21", dest="spork21", default=False, action="store_true",
