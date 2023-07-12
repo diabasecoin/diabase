@@ -45,7 +45,7 @@ BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFL
 BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-BLS_LIBS=-lbls-diabase -lgmp
+BLS_LIBS=-lbls-dash -lgmp
 
 LIBBITCOIN_SERVER=libdiabase_server.a
 LIBBITCOIN_COMMON=libdiabase_common.a

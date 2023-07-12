@@ -10,14 +10,14 @@
 #include <uint256.h>
 #include <utilstrencodings.h>
 
-// bls-diabase uses relic, which may define DEBUG and ERROR, which leads to many warnings in some build setups
+// bls-dash uses relic, which may define DEBUG and ERROR, which leads to many warnings in some build setups
 #undef ERROR
 #undef DEBUG
-#include <bls-diabase/bls.hpp>
-#include <bls-diabase/privatekey.hpp>
-#include <bls-diabase/elements.hpp>
-#include <bls-diabase/schemes.hpp>
-#include <bls-diabase/threshold.hpp>
+#include <bls-dash/bls.hpp>
+#include <bls-dash/privatekey.hpp>
+#include <bls-dash/elements.hpp>
+#include <bls-dash/schemes.hpp>
+#include <bls-dash/threshold.hpp>
 #undef DOUBLE
 
 #include <array>

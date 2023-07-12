@@ -62,7 +62,7 @@ See detailed [set of changes](https://github.com/diabasecoin/diabase/compare/v0.
 - [`97e8461234`](https://github.com/diabasecoin/diabase/commit/97e8461234) doc: Archive v0.17.0.2 release notes
 - [`96c041896b`](https://github.com/diabasecoin/diabase/commit/96c041896b) feat: add tor entrypoint script for use in diabasemate (#4182)
 - [`3661f36bbd`](https://github.com/diabasecoin/diabase/commit/3661f36bbd) Merge #14416: Fix OSX dmg issue (10.12 to 10.14) (#4177)
-- [`4f4bda0557`](https://github.com/diabasecoin/diabase/commit/4f4bda0557) depends: Undefine `BLSALLOC_SODIUM` in `bls-diabase.mk` (#4176)
+- [`4f4bda0557`](https://github.com/diabasecoin/diabase/commit/4f4bda0557) depends: Undefine `BLSALLOC_SODIUM` in `bls-dash.mk` (#4176)
 - [`575e0a3070`](https://github.com/diabasecoin/diabase/commit/575e0a3070) qt: Add `QFont::Normal` as a supported font weight when no other font weights were found (#4175)
 - [`ce4a73b790`](https://github.com/diabasecoin/diabase/commit/ce4a73b790) rpc: Fix `upgradetohd` help text (#4170)
 - [`2fa8ddf160`](https://github.com/diabasecoin/diabase/commit/2fa8ddf160) Translations 202105 (add missing) (#4169)
