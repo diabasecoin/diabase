@@ -1,6 +1,6 @@
 package=bls-diabase
 $(package)_version=1.1.0
-$(package)_download_path=https://github.com/dashpay/bls-signatures/archive
+$(package)_download_path=https://github.com/diabasecoin/bls-signatures/archive
 $(package)_download_file=$($(package)_version).tar.gz
 $(package)_file_name=$(package)-$($(package)_download_file)
 $(package)_build_subdir=build

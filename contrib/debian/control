@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://www.diabase.com/
-Vcs-Git: git://github.com/dashpay/dash.git
-Vcs-Browser: https://github.com/dashpay/dash
+Vcs-Git: git://github.com/diabasecoin/diabase.git
+Vcs-Browser: https://github.com/diabasecoin/diabase
 
 Package: diabased
 Architecture: any

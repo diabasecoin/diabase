@@ -25,7 +25,7 @@ packages:
 - "rename"
 - "ccache"
 remotes:
-- "url": "https://github.com/dashpay/dash.git"
+- "url": "https://github.com/diabasecoin/diabase.git"
   "dir": "diabase"
 files: []
 script: |

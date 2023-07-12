@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/dashpay/dash-detached-sigs.git"
+- "url": "https://github.com/diabasecoin/diabase-detached-sigs.git"
   "dir": "signature"
 files:
 - "diabasecore-osx-unsigned.tar.gz"

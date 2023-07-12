@@ -3,7 +3,7 @@ Diabase Core staging tree 0.17
 
 |CI|master|develop|
 |-|-|-|
-|Gitlab|[![Build Status](https://gitlab.com/dashpay/dash/badges/master/pipeline.svg)](https://gitlab.com/dashpay/dash/-/tree/master)|[![Build Status](https://gitlab.com/dashpay/dash/badges/develop/pipeline.svg)](https://gitlab.com/dashpay/dash/-/tree/develop)|
+|Gitlab|[![Build Status](https://gitlab.com/diabasecoin/diabase/badges/master/pipeline.svg)](https://gitlab.com/diabasecoin/diabase/-/tree/master)|[![Build Status](https://gitlab.com/diabasecoin/diabase/badges/develop/pipeline.svg)](https://gitlab.com/diabasecoin/diabase/-/tree/develop)|
 
 https://www.diabase.com
 
@@ -31,7 +31,7 @@ Development Process
 -------------------
 
 The `master` branch is meant to be stable. Development is normally done in separate branches.
-[Tags](https://github.com/dashpay/dash/tags) are created to indicate new official,
+[Tags](https://github.com/diabasecoin/diabase/tags) are created to indicate new official,
 stable release versions of Diabase Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

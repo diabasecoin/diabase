@@ -29,7 +29,7 @@ for help and more information.
 * See the [Diabase Developer Documentation](https://diabase-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [Diabase Nation Discord](http://diabasechat.org)
-* Ask for help on the [Diabase Forum](https://dashpay.com/forum)
+* Ask for help on the [Diabase Forum](https://diabasecoin.com/forum)
 
 Building
 ---------------------
@@ -59,7 +59,7 @@ The Diabase Core repo's [root README](/README.md) contains relevant information 
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [Diabase Forum](https://dashpay.com/forum), in the Development & Technical Discussion board.
+* Discuss on the [Diabase Forum](https://diabasecoin.com/forum), in the Development & Technical Discussion board.
 * Discuss on [Diabase Nation Discord](http://diabasechat.org)
 
 ### Miscellaneous
