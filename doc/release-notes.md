@@ -9,7 +9,7 @@ This is a new hotfix release.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/diabasecoin/diabase/issues>
+  <https://github.com/dashpay/dash/issues>
 
 
 Upgrading and downgrading
