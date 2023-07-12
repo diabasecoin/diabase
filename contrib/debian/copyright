@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Diabase Core
 Upstream-Contact: Diabase Core Group, Inc https://www.diabase.com/team/
-Source: https://github.com/diabasecoin/diabase
+Source: https://github.com/dashpay/dash
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers,

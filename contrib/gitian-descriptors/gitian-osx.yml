@@ -30,7 +30,7 @@ packages:
 - "fonts-tuffy"
 - "ccache"
 remotes:
-- "url": "https://github.com/diabasecoin/diabase.git"
+- "url": "https://github.com/dashpay/dash.git"
   "dir": "diabase"
 files:
 - "MacOSX10.11.sdk.tar.gz"
