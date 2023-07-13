@@ -32,7 +32,7 @@
 #include <warnings.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/diabase-config.h>
+#include <config/dash-config.h>
 #endif
 #ifdef ENABLE_WALLET
 #include <coinjoin/coinjoin-client-options.h>

@@ -12,7 +12,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/diabase-config.h>
+#include <config/dash-config.h>
 #endif
 
 #include <attributes.h>
@@ -334,7 +334,7 @@ void RenameThreadPool(ctpl::thread_pool& tp, const char* baseName);
  */
 template <typename Callable> void TraceThread(const std::string name,  Callable func)
 {
-    std::string s = "diabase-" + name;
+    std::string s = "dash-" + name;
     RenameThread(s.c_str());
     try
     {

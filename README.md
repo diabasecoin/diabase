@@ -18,7 +18,7 @@ are carried out collectively by the network. Diabase Core is the name of the ope
 source software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Diabase Core software, see https://www.diabase.com/get-diabase/.
+the Diabase Core software, see https://www.diabase.com/get-dash/.
 
 
 License
@@ -68,7 +68,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Diabase Core's Transifex page](https://www.transifex.com/projects/p/diabase/).
+[Diabase Core's Transifex page](https://www.transifex.com/projects/p/dash/).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
@@ -76,4 +76,4 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also follow the [forum](https://www.diabase.com/forum/topic/diabase-worldwide-collaboration.88/).
+Translators should also follow the [forum](https://www.diabase.com/forum/topic/dash-worldwide-collaboration.88/).

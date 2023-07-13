@@ -27,8 +27,8 @@ ARG GROUP_ID=1000
 # add user with specified (or default) user/group ids
 ENV USER_ID ${USER_ID}
 ENV GROUP_ID ${GROUP_ID}
-RUN groupadd -g ${GROUP_ID} diabase
-RUN useradd -u ${USER_ID} -g diabase -s /bin/bash -m -d /diabase diabase
+RUN groupadd -g ${GROUP_ID} dash
+RUN useradd -u ${USER_ID} -g dash -s /bin/bash -m -d /dash dash
 
 # Packages needed for all target builds
 RUN dpkg --add-architecture i386
@@ -55,13 +55,13 @@ RUN \
   update-alternatives --set x86_64-w64-mingw32-g++  /usr/bin/x86_64-w64-mingw32-g++-posix; \
   exit 0
 
-RUN mkdir /diabase-src && \
+RUN mkdir /dash-src && \
   mkdir -p /cache/ccache && \
   mkdir /cache/depends && \
   mkdir /cache/sdk-sources && \
-  chown $USER_ID:$GROUP_ID /diabase-src && \
+  chown $USER_ID:$GROUP_ID /dash-src && \
   chown $USER_ID:$GROUP_ID /cache && \
   chown $USER_ID:$GROUP_ID /cache -R
-WORKDIR /diabase-src
+WORKDIR /dash-src
 
-USER diabase
+USER dash

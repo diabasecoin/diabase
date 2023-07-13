@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/diabase-config.h>
+#include <config/dash-config.h>
 #endif
 
 #include <fs.h>
@@ -209,7 +209,7 @@ bool Intro::pickDataDirectory(interfaces::Node& node)
         GUIUtil::disableMacFocusRect(&intro);
         GUIUtil::loadStyleSheet(true);
         intro.setDataDirectory(dataDirDefaultCurrent);
-        intro.setWindowIcon(QIcon(":icons/diabase"));
+        intro.setWindowIcon(QIcon(":icons/dash"));
 
         while(true)
         {
@@ -236,8 +236,8 @@ bool Intro::pickDataDirectory(interfaces::Node& node)
         settings.setValue("strDataDirDefault", dataDirDefaultCurrent);
     }
     /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the diabase.conf file in the default data directory
-     * (to be consistent with diabased behavior)
+     * override -datadir in the dash.conf file in the default data directory
+     * (to be consistent with dashd behavior)
      */
     if(dataDir != dataDirDefaultCurrent) {
         node.softSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting

@@ -5,7 +5,7 @@
 #include <random.h>
 #include <scheduler.h>
 
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <boost/bind.hpp>
 #include <boost/thread.hpp>

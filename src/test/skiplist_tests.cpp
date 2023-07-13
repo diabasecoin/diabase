@@ -4,7 +4,7 @@
 
 #include <chain.h>
 #include <util.h>
-#include <test/test_diabase.h>
+#include <test/test_dash.h>
 
 #include <vector>
 

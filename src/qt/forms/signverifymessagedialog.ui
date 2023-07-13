@@ -353,7 +353,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../diabase.qrc"/>
+  <include location="../dash.qrc"/>
  </resources>
  <connections/>
 </ui>
