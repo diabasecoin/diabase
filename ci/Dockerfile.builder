@@ -18,7 +18,7 @@ RUN pip3 install jinja2
 RUN pip3 install flake8
 
 # dash_hash
-RUN git clone https://github.com/dashpay/dash_hash
+RUN git clone https://github.com/diabasecoin/dash_hash
 RUN cd dash_hash && python3 setup.py install
 
 ARG USER_ID=1000
