@@ -1,5 +1,5 @@
 ---
-name: "dash-win-signer"
+name: "diabase-win-signer"
 suites:
 - "bionic"
 architectures:

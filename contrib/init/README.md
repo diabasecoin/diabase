@@ -5,7 +5,7 @@ Upstart: dashd.conf
 OpenRC:  dashd.openrc
          dashd.openrcconf
 CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+OS X:    org.diabase.dashd.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

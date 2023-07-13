@@ -42,7 +42,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 90
 
 #define QAPP_ORG_NAME "Diabase"
-#define QAPP_ORG_DOMAIN "dash.org"
+#define QAPP_ORG_DOMAIN "diabase.org"
 #define QAPP_APP_NAME_DEFAULT "Diabase-Qt"
 #define QAPP_APP_NAME_TESTNET "Diabase-Qt-testnet"
 #define QAPP_APP_NAME_DEVNET "Diabase-Qt-%s"

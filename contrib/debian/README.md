@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package dashd/dash-qt
-for Debian-based Linux systems. If you compile dashd/dash-qt yourself, there are some useful files here.
+This directory contains files used to package dashd/diabase-qt
+for Debian-based Linux systems. If you compile dashd/diabase-qt yourself, there are some useful files here.
 
 ## diabase: URI support ##
 
 
-dash-qt.desktop  (Gnome / Open Desktop)
+diabase-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install dash-qt.desktop
+	sudo desktop-file-install diabase-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your dash-qt binary to `/usr/bin`
+the .desktop file or copy or symlink your diabase-qt binary to `/usr/bin`
 and the `../../share/pixmaps/dash128.png` to `/usr/share/pixmaps`
 
-dash-qt.protocol (KDE)
+diabase-qt.protocol (KDE)
 

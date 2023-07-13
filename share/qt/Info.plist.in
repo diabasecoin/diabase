@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>dash.icns</string>
+  <string>diabase.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -35,7 +35,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.dash.Diabase-Qt</string>
+  <string>org.diabase.Diabase-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -43,10 +43,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.dash.DashPayment</string>
+      <string>org.diabase.DashPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>dash</string>
+        <string>diabase</string>
       </array>
     </dict>
   </array>
@@ -55,7 +55,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.dash.paymentrequest</string>
+      <string>org.diabase.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Diabase payment request</string>
       <key>UTTypeConformsTo</key>
@@ -65,7 +65,7 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-dash-payment-request</string>
+        <string>application/x-diabase-payment-request</string>
         <key>public.filename-extension</key>
         <array>
           <string>dashpaymentrequest</string>
@@ -81,7 +81,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.dash.paymentrequest</string>
+        <string>org.diabase.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

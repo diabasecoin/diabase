@@ -12,8 +12,8 @@ When a "Transaction Lock" occurs the hash of the related transaction is broadcas
 * `zmqpubhashtxlock`: publishes the transaction hash when locked via InstantSend
 
 This mechanism has been integrated into Bitcore-Node-Diabase which allows for notification to be broadcast through Insight API in one of two ways:
-* WebSocket: [https://github.com/diabasecoin/insight-api-dash#web-socket-api](https://github.com/diabasecoin/insight-api-dash#web-socket-api)
-* API: [https://github.com/diabasecoin/insight-api-dash#instantsend-transactions](https://github.com/diabasecoin/insight-api-dash#instantsend-transactions)
+* WebSocket: [https://github.com/diabasecoin/insight-api-diabase#web-socket-api](https://github.com/diabasecoin/insight-api-diabase#web-socket-api)
+* API: [https://github.com/diabasecoin/insight-api-diabase#instantsend-transactions](https://github.com/diabasecoin/insight-api-diabase#instantsend-transactions)
 
 #### Command line option
 

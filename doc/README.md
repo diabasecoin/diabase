@@ -11,12 +11,12 @@ The following are some helpful notes on how to run Diabase on your native platfo
 
 Unpack the files into a directory and run:
 
-- `bin/dash-qt` (GUI) or
+- `bin/diabase-qt` (GUI) or
 - `bin/dashd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run dash-qt.exe.
+Unpack the files into a directory, and then run diabase-qt.exe.
 
 ### OS X
 
@@ -24,9 +24,9 @@ Drag Diabase-Qt to your applications folder, and then run Diabase-Qt.
 
 ### Need Help?
 
-* See the [Diabase documentation](https://docs.dash.org)
+* See the [Diabase documentation](https://docs.diabase.org)
 for help and more information.
-* See the [Diabase Developer Documentation](https://dash-docs.github.io/) 
+* See the [Diabase Developer Documentation](https://diabase-docs.github.io/) 
 for technical specifications and implementation details.
 * Ask for help on [Diabase Nation Discord](http://dashchat.org)
 * Ask for help on the [Diabase Forum](https://diabasecoin.com/forum)

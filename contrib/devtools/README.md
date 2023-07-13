@@ -124,7 +124,7 @@ Configuring the github-merge tool for the bitcoin repository is done in the foll
 optimize-pngs.py
 ================
 
-A script to optimize png files in the dash
+A script to optimize png files in the diabase
 repository (requires pngcrush).
 
 security-check.py and test-security-check.py

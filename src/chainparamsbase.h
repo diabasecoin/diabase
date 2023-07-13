@@ -10,7 +10,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between dash-cli and dashd)
+ * CBaseChainParams defines the base parameters (shared between diabase-cli and dashd)
  * of a given instance of the Diabase system.
  */
 class CBaseChainParams

@@ -1,5 +1,5 @@
 ---
-name: "dash-dmg-signer"
+name: "diabase-dmg-signer"
 suites:
 - "bionic"
 architectures:

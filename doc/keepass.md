@@ -16,7 +16,7 @@ Every connection to KeePassHTTP server is done via plain HTTP and even though pr
 
 ### What's new
 
-The following new options are available for dashd and dash-qt:
+The following new options are available for dashd and diabase-qt:
  - _-keepass_ Use KeePass 2 integration using KeePassHttp plugin (default: 0)
  - _-keepassport=_ Connect to KeePassHttp on port (default: 19455)
  - _-keepasskey=_ KeePassHttp key for AES encrypted communication with KeePass
@@ -36,7 +36,7 @@ Sample initialization flow from _dash-qt_ console (this needs to be done only on
  - Have KeePass running with an open database
  - Start _dash-qt_
  - Open console
- - Type "_keepass init_" in dash-qt console
+ - Type "_keepass init_" in diabase-qt console
  - Keepass pops up and asks for an association id, fill that in, for example, "_mydrkwallet_"
  - You should get a response like this "_Association successful. Id: mydrkwalletdash - Key: AgQkcs6cI7v9tlSYKjG/+s8wJrGALHl3jLosJpPLzUE=_"
  - Edit _dash.conf_ and fill in these values
