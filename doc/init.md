@@ -68,9 +68,9 @@ can then be controlled by group membership.
 ### Mac OS X
 
 Binary:              `/usr/local/bin/diabased`  
-Configuration file:  `~/Library/Application Support/DashCore/diabase.conf`  
-Data directory:      `~/Library/Application Support/DashCore`  
-Lock file:           `~/Library/Application Support/DashCore/.lock`  
+Configuration file:  `~/Library/Application Support/DiabaseCore/diabase.conf`  
+Data directory:      `~/Library/Application Support/DiabaseCore`  
+Lock file:           `~/Library/Application Support/DiabaseCore/.lock`  
 
 Installing Service Configuration
 -----------------------------------

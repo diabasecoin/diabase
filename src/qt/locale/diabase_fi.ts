@@ -1860,7 +1860,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Cannot start diabase: click-to-pay handler</source>
-        <translation>Ei voi käynnistää Dashia: click-to-pay handler</translation>
+        <translation>Ei voi käynnistää Diabaseia: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>

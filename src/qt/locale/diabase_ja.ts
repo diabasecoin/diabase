@@ -75,7 +75,7 @@
     </message>
     <message>
         <source>These are your Diabase addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>これらは送金を受取用のあなたのDashアドレスです。トランザクションごとに新しい受け取り用アドレスの作成を推奨します。</translation>
+        <translation>これらは送金を受取用のあなたのDiabaseアドレスです。トランザクションごとに新しい受け取り用アドレスの作成を推奨します。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -192,7 +192,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DIAC&lt;/b&gt;!</source>
-        <translation>警告: ウォレットを暗号化しパスフレーズを紛失した場合、あなたは &lt;b&gt;すべてのDash&lt;/b&gt;を失います!</translation>
+        <translation>警告: ウォレットを暗号化しパスフレーズを紛失した場合、あなたは &lt;b&gt;すべてのDiabase&lt;/b&gt;を失います!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -397,7 +397,7 @@
     </message>
     <message>
         <source>Sign messages with your Diabase addresses to prove you own them</source>
-        <translation>あなたがDash アドレスを所有していることを証明するために、あなたのDashアドレスでメッセージに署名してください。</translation>
+        <translation>あなたがDiabase アドレスを所有していることを証明するために、あなたのDiabaseアドレスでメッセージに署名してください。</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -405,7 +405,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Diabase addresses</source>
-        <translation>指定されたDashアドレスで署名されたことを確認するためにメッセージを検証してください。</translation>
+        <translation>指定されたDiabaseアドレスで署名されたことを確認するためにメッセージを検証してください。</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -493,7 +493,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Diabase command-line options</source>
-        <translation>有効なDashのコマンドラインオプションのリストを見るために %1 のヘルプメッセージを表示</translation>
+        <translation>有効なDiabaseのコマンドラインオプションのリストを見るために %1 のヘルプメッセージを表示</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -849,7 +849,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Diabase address.</source>
-        <translation>入力されたアドレス "%1" は有効なDashアドレスではありません。</translation>
+        <translation>入力されたアドレス "%1" は有効なDiabaseアドレスではありません。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -951,7 +951,7 @@
     </message>
     <message>
         <source>%1 will download and store a copy of the Diabase block chain.</source>
-        <translation>%1はDashのブロックチェーンの複製をダウンロードし保存します。</translation>
+        <translation>%1はDiabaseのブロックチェーンの複製をダウンロードし保存します。</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1077,11 +1077,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Diabase network, as detailed below.</source>
-        <translation>確認できない最新のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度Dashのネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
+        <translation>確認できない最新のトランザクションがあるかもしれません。これによりウォレットの残高は不正確なものである可能性があります。この情報はウォレットが一度Diabaseのネットワークへの同期が完了すると正確なものとなります。詳細は下記を参照してください。</translation>
     </message>
     <message>
         <source>Attempting to spend Diabase that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>表示されてないトランザクションに影響を受けたDashを使用しようとするとネットワークに承認されません。</translation>
+        <translation>表示されてないトランザクションに影響を受けたDiabaseを使用しようとするとネットワークに承認されません。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1187,11 +1187,11 @@
     </message>
     <message>
         <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自動的にルーターのDash Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
+        <translation>自動的にルーターのDiabase Core クライアントポートを開放します。これはルーターがUPnP機能をサポートしておりUPnP機能が有効な場合にのみ機能します。</translation>
     </message>
     <message>
         <source>Connect to the Diabase network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5プロキシ経由でDashネットワークに接続</translation>
+        <translation>SOCKS5プロキシ経由でDiabaseネットワークに接続</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1271,7 +1271,7 @@
     </message>
     <message>
         <source>Connect to the Diabase network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor秘匿サービスを利用するため独立なSOCKS5プロキシ経由でDashネットワークに接続</translation>
+        <translation>Tor秘匿サービスを利用するため独立なSOCKS5プロキシ経由でDiabaseネットワークに接続</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1368,7 +1368,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Diabase network after a connection is established, but this process has not completed yet.</source>
-        <translation>表示された情報は古いかもしれません。接続が確立されればあなたのウォレットは Dashネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
+        <translation>表示された情報は古いかもしれません。接続が確立されればあなたのウォレットは Diabaseネットワークと自動的に同期しますが、このプロセスはまだ完了していません。</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1665,7 +1665,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Enter a Diabase address (e.g. %1)</source>
-        <translation>Dashアドレスを入力してください (例 %1)</translation>
+        <translation>Diabaseアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2151,7 +2151,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Diabase network.</source>
-        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDashネットワークを通じて支払いと共に送信されるわけではありません。</translation>
+        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDiabaseネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2163,7 +2163,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Diabase network.</source>
-        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDashネットワークを通じて支払いと共に送信されるわけではありません。</translation>
+        <translation>支払いリクエストが開始された時に表示される、支払いリクエストに添付される任意のメッセージです。注意：このメッセージはDiabaseネットワークを通じて支払いと共に送信されるわけではありません。</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2396,7 +2396,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for diabase transactions than the network can process.</source>
-        <translation>最低限の手数料しか支払わなくても、トランザクション量以上のスペースが対象ブロックにあれば問題ありません。&lt;br /&gt;しかし、ネットワークが処理できる以上のDashのトランザクション需要があれば、処理されないトランザクションになり得ることに注意してください。</translation>
+        <translation>最低限の手数料しか支払わなくても、トランザクション量以上のスペースが対象ブロックにあれば問題ありません。&lt;br /&gt;しかし、ネットワークが処理できる以上のDiabaseのトランザクション需要があれば、処理されないトランザクションになり得ることに注意してください。</translation>
     </message>
     <message>
         <source>per kilobyte</source>
@@ -2568,7 +2568,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Warning: Invalid Diabase address</source>
-        <translation>警告：Dashアドレスが無効です</translation>
+        <translation>警告：Diabaseアドレスが無効です</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2599,7 +2599,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The Diabase address to send the payment to</source>
-        <translation>送金先Dashアドレス</translation>
+        <translation>送金先Diabaseアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2635,7 +2635,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Diabase than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手数料は総額から差し引かれます。受取人は入力した金額より少ないDashを受け取ります。複数の受取人を選択した場合、手数料は等しく分割されます。</translation>
+        <translation>手数料は総額から差し引かれます。受取人は入力した金額より少ないDiabaseを受け取ります。複数の受取人を選択した場合、手数料は等しく分割されます。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2647,7 +2647,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
-        <translation>Diabase: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはDashネットワークを経由して送信されるわけではありません。</translation>
+        <translation>Diabase: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはDiabaseネットワークを経由して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -2700,11 +2700,11 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive Diabase sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>あなたのアドレスを使用してあなたがDashを受け取ることができるようにメッセージやアグリーメントに署名できます。充分に詳細が判明していてあなたが確認しているものだけに署名してください。フィッシングによってあなたの署名を読み取られないように注意してください。</translation>
+        <translation>あなたのアドレスを使用してあなたがDiabaseを受け取ることができるようにメッセージやアグリーメントに署名できます。充分に詳細が判明していてあなたが確認しているものだけに署名してください。フィッシングによってあなたの署名を読み取られないように注意してください。</translation>
     </message>
     <message>
         <source>The Diabase address to sign the message with</source>
-        <translation>メッセージを署名する際に使用するDashアドレス</translation>
+        <translation>メッセージを署名する際に使用するDiabaseアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2760,11 +2760,11 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The Diabase address the message was signed with</source>
-        <translation>メッセージの署名に使用されたDashアドレス</translation>
+        <translation>メッセージの署名に使用されたDiabaseアドレス</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Diabase address</source>
-        <translation>指定されたDashアドレスで署名されたことを確認するためメッセージを検証</translation>
+        <translation>指定されたDiabaseアドレスで署名されたことを確認するためメッセージを検証</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3829,7 +3829,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Diabase Core</source>
-        <translation>Dashコア</translation>
+        <translation>Diabaseコア</translation>
     </message>
     <message>
         <source>The %s developers</source>

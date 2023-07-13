@@ -43,7 +43,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.diabase.DashPayment</string>
+      <string>org.diabase.DiabasePayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>diabase</string>

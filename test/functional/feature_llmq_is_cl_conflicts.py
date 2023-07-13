@@ -7,7 +7,7 @@ from decimal import Decimal
 
 from test_framework.blocktools import get_masternode_payment, create_coinbase, create_block
 from test_framework.mininode import *
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error, get_bip9_status
 
 '''
@@ -45,7 +45,7 @@ class TestP2PConn(P2PInterface):
                 self.send_message(self.islocks[inv.hash])
 
 
-class LLMQ_IS_CL_Conflicts(DashTestFramework):
+class LLMQ_IS_CL_Conflicts(DiabaseTestFramework):
     def set_test_params(self):
         self.set_diabase_test_params(4, 3, fast_dip3_enforcement=True)
         #disable_mocktime()

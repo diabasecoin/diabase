@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 LABEL maintainer="Diabase Developers <dev@diabase.org>"
-LABEL description="Dockerised DashCore"
+LABEL description="Dockerised DiabaseCore"
 
 ARG USER_ID
 ARG GROUP_ID

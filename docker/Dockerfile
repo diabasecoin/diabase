@@ -1,6 +1,6 @@
 FROM phusion/baseimage:bionic-1.0.0
 LABEL maintainer="Diabase Developers <dev@diabase.org>"
-LABEL description="Dockerised DashCore, built from Travis"
+LABEL description="Dockerised DiabaseCore, built from Travis"
 
 ARG USER_ID
 ARG GROUP_ID

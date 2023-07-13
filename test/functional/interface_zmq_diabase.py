@@ -17,7 +17,7 @@ finally:
     pass
 
 from test_framework.test_framework import (
-     DashTestFramework, skip_if_no_bitcoind_zmq, skip_if_no_py3_zmq)
+     DiabaseTestFramework, skip_if_no_bitcoind_zmq, skip_if_no_py3_zmq)
 from test_framework.mininode import P2PInterface, network_thread_start
 from test_framework.util import assert_equal, assert_raises_rpc_error, bytes_to_hex_str
 from test_framework.messages import (
@@ -85,7 +85,7 @@ class TestP2PConn(P2PInterface):
                 self.send_message(self.txes[inv.hash])
 
 
-class DashZMQTest (DashTestFramework):
+class DiabaseZMQTest (DiabaseTestFramework):
     def set_test_params(self):
         # That's where the zmq publisher will listen for subscriber
         self.address = "tcp://127.0.0.1:28333"
@@ -385,4 +385,4 @@ class DashZMQTest (DashTestFramework):
 
 
 if __name__ == '__main__':
-    DashZMQTest().main()
+    DiabaseZMQTest().main()

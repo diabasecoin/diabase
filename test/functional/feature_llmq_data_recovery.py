@@ -5,7 +5,7 @@
 
 import time
 from test_framework.mininode import logger
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import force_finish_mnsync, connect_nodes
 
 '''
@@ -22,7 +22,7 @@ llmq_test_v17 = 102
 llmq_type_strings = {llmq_test: 'llmq_test', llmq_test_v17: 'llmq_test_v17'}
 
 
-class QuorumDataRecoveryTest(DashTestFramework):
+class QuorumDataRecoveryTest(DiabaseTestFramework):
     def set_test_params(self):
         extra_args = [["-vbparams=dip0020:0:999999999999:10:8:6:5"] for _ in range(9)]
         self.set_diabase_test_params(9, 7, fast_dip3_enforcement=True, extra_args=extra_args)

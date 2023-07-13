@@ -337,7 +337,7 @@
     </message>
     <message>
         <source>Send coins to a Diabase address</source>
-        <translation>Verstuur Diabase naar een Dashadres</translation>
+        <translation>Verstuur Diabase naar een Diabaseadres</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -449,7 +449,7 @@
     </message>
     <message>
         <source>Sign messages with your Diabase addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Dashadressen om te bewijzen dat u deze adressen bezit.</translation>
+        <translation>Onderteken berichten met uw Diabaseadressen om te bewijzen dat u deze adressen bezit.</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
@@ -457,7 +457,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Diabase addresses</source>
-        <translation>Verifieer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Dashadressen.</translation>
+        <translation>Verifieer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Diabaseadressen.</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -1512,7 +1512,7 @@
     </message>
     <message>
         <source>Connect to the Diabase network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Maak verbinding met Dashnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
+        <translation>Maak verbinding met Diabasenetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -2003,7 +2003,7 @@ Om te mixen moeten andere gebruikers exact dezelfde denominaties inbrengen.</tra
     </message>
     <message>
         <source>Enter a Diabase address (e.g. %1)</source>
-        <translation>Voer een Dashadres in (bijv. %1)</translation>
+        <translation>Voer een Diabaseadres in (bijv. %1)</translation>
     </message>
     <message>
         <source>Appearance Setup</source>
@@ -3106,7 +3106,7 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het Diabase net
     </message>
     <message>
         <source>The Diabase address to send the payment to</source>
-        <translation>Het Dashadres om betaling aan te versturen</translation>
+        <translation>Het Diabaseadres om betaling aan te versturen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3215,7 +3215,7 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het Diabase net
     </message>
     <message>
         <source>The Diabase address to sign the message with</source>
-        <translation>Het Dashadres om bericht mee te ondertekenen</translation>
+        <translation>Het Diabaseadres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3271,7 +3271,7 @@ Nota: Het bericht zal niet verzonden worden met de betaling over het Diabase net
     </message>
     <message>
         <source>The Diabase address the message was signed with</source>
-        <translation>Het Dashadres waarmee het bericht ondertekend is</translation>
+        <translation>Het Diabaseadres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Diabase address</source>

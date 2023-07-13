@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import isolate_node, reconnect_isolated_node, assert_equal, \
     assert_raises_rpc_error
 
@@ -14,7 +14,7 @@ p2p_instantsend.py
 Tests InstantSend functionality (prevent doublespend for unconfirmed transactions)
 '''
 
-class InstantSendTest(DashTestFramework):
+class InstantSendTest(DiabaseTestFramework):
     def set_test_params(self):
         self.set_diabase_test_params(7, 3, fast_dip3_enforcement=True)
         # set sender,  receiver,  isolated nodes

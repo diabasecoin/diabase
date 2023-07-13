@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Tests around diabase governance objects."""
 
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import *
 from test_framework.messages import *
 
@@ -19,7 +19,7 @@ def validate_object(prepared, rpc_prepared):
     assert_equal(prepared["data"], rpc_prepared["data"])
 
 
-class DashGovernanceTest (DashTestFramework):
+class DiabaseGovernanceTest (DiabaseTestFramework):
     def set_test_params(self):
         self.set_diabase_test_params(2, 1)
 
@@ -97,4 +97,4 @@ class DashGovernanceTest (DashTestFramework):
 
 
 if __name__ == '__main__':
-    DashGovernanceTest().main()
+    DiabaseGovernanceTest().main()

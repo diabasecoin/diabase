@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import *
 
 '''
@@ -13,7 +13,7 @@ Checks intra quorum connections
 
 '''
 
-class LLMQConnections(DashTestFramework):
+class LLMQConnections(DiabaseTestFramework):
     def set_test_params(self):
         self.set_diabase_test_params(15, 14, fast_dip3_enforcement=True)
         self.set_diabase_llmq_test_params(5, 3)

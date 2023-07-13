@@ -75,11 +75,11 @@
     </message>
     <message>
         <source>These are your Diabase addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这些是您要付款过去的Dash地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
+        <translation>这些是您要付款过去的Diabase地址。在付款之前，务必要检查金额和收款地址是否正确。</translation>
     </message>
     <message>
         <source>These are your Diabase addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这些是您用来收款的Dash地址。建议在每次交易时，都使用一个新的收款地址。</translation>
+        <translation>这些是您用来收款的Diabase地址。建议在每次交易时，都使用一个新的收款地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -236,7 +236,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DIAC&lt;/b&gt;!</source>
-        <translation>警告:如果把钱包加​​密后又忘记密码，您就会从此&lt;b&gt;失去所有的Dash&lt;/b&gt;！</translation>
+        <translation>警告:如果把钱包加​​密后又忘记密码，您就会从此&lt;b&gt;失去所有的Diabase&lt;/b&gt;！</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -337,7 +337,7 @@
     </message>
     <message>
         <source>Send coins to a Diabase address</source>
-        <translation>发送币至Dash地址</translation>
+        <translation>发送币至Diabase地址</translation>
     </message>
     <message>
         <source>&amp;Receive</source>
@@ -345,7 +345,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and diabase: URIs)</source>
-        <translation>请求付款(生成二维码和Dash付款协议的URI)</translation>
+        <translation>请求付款(生成二维码和Diabase付款协议的URI)</translation>
     </message>
     <message>
         <source>&amp;Transactions</source>
@@ -373,7 +373,7 @@
     </message>
     <message>
         <source>Show information about Diabase Core</source>
-        <translation>显示关于Dash Core信息</translation>
+        <translation>显示关于Diabase Core信息</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
@@ -393,7 +393,7 @@
     </message>
     <message>
         <source>Send %1 funds to a Diabase address</source>
-        <translation>发送%1资金至一个Dash地址</translation>
+        <translation>发送%1资金至一个Diabase地址</translation>
     </message>
     <message>
         <source>Modify configuration options for %1</source>
@@ -457,7 +457,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Diabase addresses</source>
-        <translation>验证消息是用来确定此消息是用指定的Dash地址签发的</translation>
+        <translation>验证消息是用来确定此消息是用指定的Diabase地址签发的</translation>
     </message>
     <message>
         <source>&amp;Information</source>
@@ -537,7 +537,7 @@
     </message>
     <message>
         <source>Open a diabase: URI or payment request</source>
-        <translation>打开一个Dash协议的URI或付款请求</translation>
+        <translation>打开一个Diabase协议的URI或付款请求</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -591,7 +591,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Diabase network</source>
-        <translation><numerusform>%n个有效的Dash网络连接</numerusform></translation>
+        <translation><numerusform>%n个有效的Diabase网络连接</numerusform></translation>
     </message>
     <message>
         <source>Network activity disabled</source>
@@ -971,7 +971,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Diabase address.</source>
-        <translation>输入的地址“%1”不是有效的Dash地址。</translation>
+        <translation>输入的地址“%1”不是有效的Diabase地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1033,7 +1033,7 @@
     </message>
     <message>
         <source>&lt;h3&gt;%1 Basics&lt;/h3&gt; %1 gives you true financial privacy by obscuring the origins of your funds. All the Diabase in your wallet is comprised of different "inputs" which you can think of as separate, discrete coins.&lt;br&gt; %1 uses an innovative process to mix your inputs with the inputs of two or more other people, without having your coins ever leave your wallet. You retain control of your money at all times.&lt;hr&gt; &lt;b&gt;The %1 process works like this:&lt;/b&gt;&lt;ol type="1"&gt; &lt;li&gt;%1 begins by breaking your transaction inputs down into standard denominations. These denominations are 0.001 DIAC, 0.01 DIAC, 0.1 DIAC, 1 DIAC and 10 DIAC -- sort of like the paper money you use every day.&lt;/li&gt; &lt;li&gt;Your wallet then sends requests to specially configured software nodes on the network, called "masternodes." These masternodes are informed then that you are interested in mixing a certain denomination. No identifiable information is sent to the masternodes, so they never know "who" you are.&lt;/li&gt; &lt;li&gt;When two or more other people send similar messages, indicating that they wish to mix the same denomination, a mixing session begins. The masternode mixes up the inputs and instructs all three users' wallets to pay the now-transformed input back to themselves. Your wallet pays that denomination directly to itself, but in a different address (called a change address).&lt;/li&gt; &lt;li&gt;In order to fully obscure your funds, your wallet must repeat this process a number of times with each denomination. Each time the process is completed, it's called a "round." Each round of %1 makes it exponentially more difficult to determine where your funds originated.&lt;/li&gt; &lt;li&gt;This mixing process happens in the background without any intervention on your part. When you wish to make a transaction, your funds will already be mixed. No additional waiting is required.&lt;/li&gt; &lt;/ol&gt; &lt;hr&gt;&lt;b&gt;IMPORTANT:&lt;/b&gt; Your wallet only contains 1000 of these "change addresses." Every time a mixing event happens, up to 9 of your addresses are used up. This means those 1000 addresses last for about 100 mixing events. When 900 of them are used, your wallet must create more addresses. It can only do this, however, if you have automatic backups enabled.&lt;br&gt; Consequently, users who have backups disabled will also have %1 disabled. &lt;hr&gt;For more information, see the &lt;a style="%2" href="%3"&gt;%1 documentation&lt;/a&gt;.</source>
-        <translation>&lt;h3&gt;%1基础知识&lt;/h3&gt;%1通过隐藏您的资金来源为您提供真正的财务隐私。您的钱包中所有的Dash都由不同的“输入”组成，您可以将其视为分开的离散硬币。&lt;br&gt;%1使用创新的方法将您的输入与其他两个人的输入相结合，而过程中不会让您的Dash离开您的钱包。每时每刻，您仍然控制着您的钱。&lt;hr&gt;&lt;b&gt;%1的运作原理如下：&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;%1首先将您的交易分柝成多个标准面额的交易。这些标准面额分别为0.001 DIAC，0.01 DIAC，0.1 DIAC，1 DIAC和10 DIAC --有点像您每天使用的纸币。&lt;/li&gt;&lt;li&gt;您的钱包然后发送请求到网络上有专门配置的软件节点，称为“主节点”。这些主节点会收到您希望混合一些资金的通知。没有可识别的信息发送到主节点，所以他们永远不会知道您是“谁”。&lt;li&gt;当另外两个人发送类似的消息时，表示希望混合相同的面额的话，混合会话就会开始。相关的主节点会混合这些输入，并指示所有三个用户的钱包将已经转换了输入的交易支付给自己。您的钱包直接支付给自己，但是付给不同的位址（称之为找零地址）。&lt;/li&gt;&lt;li&gt;为了完全掩盖您的资金来源，您的钱包必须以每个面额来重复此过程数次。每次这个过程完成后，都称之为一个“循环”。每个循环的%1都会令确定您的资金来源的工作倍加困难。&lt;/li&gt;&lt;li&gt;这种混合过程发生在后台，而不需要您进行任何操作。当您想进行交易时，您的资金将已被混币处理。不需再花额外的时间等待。&lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;重要：&lt;b&gt;您的钱包只能拥有1000个“找零地址”。每次混合事件发生时，最多会使用9个找零地址。这意味着这1000个地址可以容许100次的混合事件。当其的中900个已经被使用后，您的钱包必须创建更多的地址。如果您启用了自动备份，则只能够这样做。&lt;br&gt;因此，禁用备份的用户也将禁用%1。&lt;hr&gt;如欲了解更多信息请参阅&lt;a style="%2" href="%3"&gt;%1文档&lt;/a&gt;。</translation>
+        <translation>&lt;h3&gt;%1基础知识&lt;/h3&gt;%1通过隐藏您的资金来源为您提供真正的财务隐私。您的钱包中所有的Diabase都由不同的“输入”组成，您可以将其视为分开的离散硬币。&lt;br&gt;%1使用创新的方法将您的输入与其他两个人的输入相结合，而过程中不会让您的Diabase离开您的钱包。每时每刻，您仍然控制着您的钱。&lt;hr&gt;&lt;b&gt;%1的运作原理如下：&lt;/b&gt;&lt;ol type="1"&gt;&lt;li&gt;%1首先将您的交易分柝成多个标准面额的交易。这些标准面额分别为0.001 DIAC，0.01 DIAC，0.1 DIAC，1 DIAC和10 DIAC --有点像您每天使用的纸币。&lt;/li&gt;&lt;li&gt;您的钱包然后发送请求到网络上有专门配置的软件节点，称为“主节点”。这些主节点会收到您希望混合一些资金的通知。没有可识别的信息发送到主节点，所以他们永远不会知道您是“谁”。&lt;li&gt;当另外两个人发送类似的消息时，表示希望混合相同的面额的话，混合会话就会开始。相关的主节点会混合这些输入，并指示所有三个用户的钱包将已经转换了输入的交易支付给自己。您的钱包直接支付给自己，但是付给不同的位址（称之为找零地址）。&lt;/li&gt;&lt;li&gt;为了完全掩盖您的资金来源，您的钱包必须以每个面额来重复此过程数次。每次这个过程完成后，都称之为一个“循环”。每个循环的%1都会令确定您的资金来源的工作倍加困难。&lt;/li&gt;&lt;li&gt;这种混合过程发生在后台，而不需要您进行任何操作。当您想进行交易时，您的资金将已被混币处理。不需再花额外的时间等待。&lt;/li&gt;&lt;/ol&gt;&lt;hr&gt;重要：&lt;b&gt;您的钱包只能拥有1000个“找零地址”。每次混合事件发生时，最多会使用9个找零地址。这意味着这1000个地址可以容许100次的混合事件。当其的中900个已经被使用后，您的钱包必须创建更多的地址。如果您启用了自动备份，则只能够这样做。&lt;br&gt;因此，禁用备份的用户也将禁用%1。&lt;hr&gt;如欲了解更多信息请参阅&lt;a style="%2" href="%3"&gt;%1文档&lt;/a&gt;。</translation>
     </message>
 </context>
 <context>
@@ -1238,11 +1238,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the Diabase network, as detailed below.</source>
-        <translation>最近的交易可能尚未显示，因此您的钱包的余额可能不正确。一旦您的钱包完成与Dash网络的同步，这个信息将会修正，如下所述。</translation>
+        <translation>最近的交易可能尚未显示，因此您的钱包的余额可能不正确。一旦您的钱包完成与Diabase网络的同步，这个信息将会修正，如下所述。</translation>
     </message>
     <message>
         <source>Attempting to spend Diabase that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>假如您正在尝试花费尚未显示出来的Dash，这个交易将不会被网络所接受。</translation>
+        <translation>假如您正在尝试花费尚未显示出来的Diabase，这个交易将不会被网络所接受。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1400,7 +1400,7 @@
     </message>
     <message>
         <source>Automatically open the Diabase Core client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器打开Dash Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
+        <translation>自动在路由器打开Diabase Core客户端端口。此项只在路由器支持UPnP且开启时有效。</translation>
     </message>
     <message>
         <source>Accept connections from outside.</source>
@@ -1412,7 +1412,7 @@
     </message>
     <message>
         <source>Connect to the Diabase network through a SOCKS5 proxy.</source>
-        <translation>通过SOCKS5代理连接Dash网络。</translation>
+        <translation>通过SOCKS5代理连接Diabase网络。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1512,7 +1512,7 @@
     </message>
     <message>
         <source>Connect to the Diabase network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>通过另一个SOCKS5代理服务器作为Tor隐藏服务来连接到Dash网络。</translation>
+        <translation>通过另一个SOCKS5代理服务器作为Tor隐藏服务来连接到Diabase网络。</translation>
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
@@ -1613,7 +1613,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Diabase network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息也许已过期。当与Dash网络连接后钱包程序会自动同步，但现在还未完成。</translation>
+        <translation>显示的信息也许已过期。当与Diabase网络连接后钱包程序会自动同步，但现在还未完成。</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1713,7 +1713,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The denominations you submitted to the Masternode.&lt;br&gt;To mix, other users must submit the exact same denominations.</source>
-        <translation>您向主节点所提交的用以面额化混合的Dash。&lt;br&gt;为了混合，其他用户必须提交完全一样的面额。</translation>
+        <translation>您向主节点所提交的用以面额化混合的Diabase。&lt;br&gt;为了混合，其他用户必须提交完全一样的面额。</translation>
     </message>
     <message>
         <source>out of sync</source>
@@ -1836,7 +1836,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Cannot start diabase: click-to-pay handler</source>
-        <translation>无法启动Dash程序：click-to-pay handler</translation>
+        <translation>无法启动Diabase程序：click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1856,7 +1856,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Diabase address or malformed URI parameters.</source>
-        <translation>URI不能被解析! 原因可能是无效的Dash地址或URI参数格式错误。</translation>
+        <translation>URI不能被解析! 原因可能是无效的Diabase地址或URI参数格式错误。</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -2002,7 +2002,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Enter a Diabase address (e.g. %1)</source>
-        <translation>输入一个Dash地址(例如 %1)</translation>
+        <translation>输入一个Diabase地址(例如 %1)</translation>
     </message>
     <message>
         <source>Appearance Setup</source>
@@ -2608,7 +2608,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     <name>ReceiveCoinsDialog</name>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Diabase network.</source>
-        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意：这个讯息不会随着付款送到Dash网路上。</translation>
+        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。注意：这个讯息不会随着付款送到Diabase网路上。</translation>
     </message>
     <message>
         <source>&amp;Message:</source>
@@ -2620,7 +2620,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Diabase network.</source>
-        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意：这个讯息不会随着付款送到Dash网路上。</translation>
+        <translation>附加在付款要求中的讯息，可以不填，打开要求内容时会显示。&lt;br&gt;注意：这个讯息不会随着付款送到Diabase网路上。</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3073,7 +3073,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Warning: Invalid Diabase address</source>
-        <translation>警告：无效的Dash地址</translation>
+        <translation>警告：无效的Diabase地址</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3140,7 +3140,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>The fee will be deducted from the amount being sent. The recipient will receive a lower amount of Diabase than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>手续费将从发送金额中扣除。接收者将收到的Dash金额将会比您在金额字段中输入的金额为少。如果选择了多个收款人，该费用将会被平均摊分。</translation>
+        <translation>手续费将从发送金额中扣除。接收者将收到的Diabase金额将会比您在金额字段中输入的金额为少。如果选择了多个收款人，该费用将会被平均摊分。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3156,7 +3156,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>A message that was attached to the diabase: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Diabase network.</source>
-        <translation>附加在Dash付款协议URI中的信息，会和交易内容一并存储，可供您参考。提示：此信息不会发送到Dash网络上。</translation>
+        <translation>附加在Diabase付款协议URI中的信息，会和交易内容一并存储，可供您参考。提示：此信息不会发送到Diabase网络上。</translation>
     </message>
     <message>
         <source>This is an unauthenticated payment request.</source>
@@ -3245,7 +3245,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Sign the message to prove you own this Diabase address</source>
-        <translation>签署信息证明您拥有此Dash地址</translation>
+        <translation>签署信息证明您拥有此Diabase地址</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3273,7 +3273,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Diabase address</source>
-        <translation>验证信息用来确保此被签署信息对应相对的Dash地址</translation>
+        <translation>验证信息用来确保此被签署信息对应相对的Diabase地址</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3518,7 +3518,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>生成的Dash在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比您早几秒钟成功生成一个区块。</translation>
+        <translation>生成的Diabase在可以使用前必须有 %1 个成熟的区块。当您生成了此区块后，它将被广播到网络中以加入区块链。如果它未成功进入区块链，其状态将变更为“不接受”并且不可使用。这可能偶尔会发生，如果另一个节点比您早几秒钟成功生成一个区块。</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3900,7 +3900,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>发送Dash</translation>
+        <translation>发送Diabase</translation>
     </message>
 </context>
 <context>
@@ -3958,7 +3958,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>警告: Dash网路对于区块链结的决定目前有分歧！看来有些矿工会有问题。</translation>
+        <translation>警告: Diabase网路对于区块链结的决定目前有分歧！看来有些矿工会有问题。</translation>
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>

@@ -520,7 +520,7 @@ class MasternodeInfo:
         self.collateral_vout = collateral_vout
 
 
-class DashTestFramework(BitcoinTestFramework):
+class DiabaseTestFramework(BitcoinTestFramework):
     def set_diabase_test_params(self, num_nodes, masterodes_count, extra_args=None, fast_dip3_enforcement=False):
         self.mn_count = masterodes_count
         self.num_nodes = num_nodes

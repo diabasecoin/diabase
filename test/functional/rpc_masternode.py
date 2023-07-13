@@ -2,7 +2,7 @@
 # Copyright (c) 2020-2021 The Diabase Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-from test_framework.test_framework import DashTestFramework
+from test_framework.test_framework import DiabaseTestFramework
 from test_framework.util import assert_equal
 
 '''
@@ -11,7 +11,7 @@ rpc_masternode.py
 Test "masternode" rpc subcommands
 '''
 
-class RPCMasternodeTest(DashTestFramework):
+class RPCMasternodeTest(DiabaseTestFramework):
     def set_test_params(self):
         self.set_diabase_test_params(4, 3, fast_dip3_enforcement=True)
 
