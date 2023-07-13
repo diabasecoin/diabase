@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *dash_strings[] = {
+static const char UNUSED *diabase_strings[] = {
 QT_TRANSLATE_NOOP("diabase-core", "Diabase Core"),
 QT_TRANSLATE_NOOP("diabase-core", "The %s developers"),
 QT_TRANSLATE_NOOP("diabase-core", ""

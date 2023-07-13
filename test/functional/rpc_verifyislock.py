@@ -17,8 +17,8 @@ Test verifyislock rpc
 class RPCVerifyISLockTest(DashTestFramework):
     def set_test_params(self):
         # -whitelist is needed to avoid the trickling logic on node0
-        self.set_dash_test_params(6, 5, [["-whitelist=127.0.0.1"], [], [], [], [], []], fast_dip3_enforcement=True)
-        self.set_dash_llmq_test_params(5, 3)
+        self.set_diabase_test_params(6, 5, [["-whitelist=127.0.0.1"], [], [], [], [], []], fast_dip3_enforcement=True)
+        self.set_diabase_llmq_test_params(5, 3)
 
     def get_request_id(self, tx_hex):
         tx = FromHex(CTransaction(), tx_hex)

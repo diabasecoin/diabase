@@ -1,31 +1,31 @@
-# /etc/conf.d/dashd: config file for /etc/init.d/dashd
+# /etc/conf.d/diabased: config file for /etc/init.d/diabased
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/dashcore/diabase.conf"
+#BITCOIND_CONFIGFILE="/etc/diabasecore/diabase.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/dashd"
+#BITCOIND_PIDDIR="/var/run/diabased"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/dashd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/diabased.pid"
 
-# Where to write dashd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/dashd"
+# Where to write diabased data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/diabased"
 
-# User and group to own dashd process
-#BITCOIND_USER="dashcore"
-#BITCOIND_GROUP="dashcore"
+# User and group to own diabased process
+#BITCOIND_USER="diabasecore"
+#BITCOIND_GROUP="diabasecore"
 
-# Path to dashd executable
-#BITCOIND_BIN="/usr/bin/dashd"
+# Path to diabased executable
+#BITCOIND_BIN="/usr/bin/diabased"
 
-# Nice value to run dashd under
+# Nice value to run diabased under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
 #BITCOIND_OPTS=""
 
-# The timeout in seconds OpenRC will wait for dashd to terminate
+# The timeout in seconds OpenRC will wait for diabased to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule

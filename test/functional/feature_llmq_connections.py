@@ -15,8 +15,8 @@ Checks intra quorum connections
 
 class LLMQConnections(DashTestFramework):
     def set_test_params(self):
-        self.set_dash_test_params(15, 14, fast_dip3_enforcement=True)
-        self.set_dash_llmq_test_params(5, 3)
+        self.set_diabase_test_params(15, 14, fast_dip3_enforcement=True)
+        self.set_diabase_llmq_test_params(5, 3)
 
     def run_test(self):
         self.nodes[0].spork("SPORK_17_QUORUM_DKG_ENABLED", 0)

@@ -2,7 +2,7 @@
 # Copyright (c) 2017 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Class for dashd node under test"""
+"""Class for diabased node under test"""
 
 import contextlib
 import decimal
@@ -40,7 +40,7 @@ class FailedToStartError(Exception):
 
 
 class TestNode():
-    """A class for representing a dashd node under test.
+    """A class for representing a diabased node under test.
 
     This class contains:
 
@@ -102,7 +102,7 @@ class TestNode():
         raise AssertionError(self._node_msg(msg))
 
     def __del__(self):
-        # Ensure that we don't leave any dashd processes lying around after
+        # Ensure that we don't leave any diabased processes lying around after
         # the test ends
         if self.process and self.cleanup_on_exit:
             # Should only happen on test failure
@@ -129,21 +129,21 @@ class TestNode():
         if self.mocktime != 0:
             all_args = all_args + ["-mocktime=%d" % self.mocktime]
         # Delete any existing cookie file -- if such a file exists (eg due to
-        # unclean shutdown), it will get overwritten anyway by dashd, and
+        # unclean shutdown), it will get overwritten anyway by diabased, and
         # potentially interfere with our attempt to authenticate
         delete_cookie_file(self.datadir, self.chain)
         self.process = subprocess.Popen(all_args, stderr=stderr, *args, **kwargs)
         self.running = True
-        self.log.debug("dashd started, waiting for RPC to come up")
+        self.log.debug("diabased started, waiting for RPC to come up")
 
     def wait_for_rpc_connection(self):
-        """Sets up an RPC connection to the dashd process. Returns False if unable to connect."""
+        """Sets up an RPC connection to the diabased process. Returns False if unable to connect."""
         # Poll at a rate of four times per second
         poll_per_s = 4
         for _ in range(poll_per_s * self.rpc_timeout):
             if self.process.poll() is not None:
                 raise FailedToStartError(self._node_msg(
-                    'dashd exited with status {} during initialization'.format(self.process.returncode)))
+                    'diabased exited with status {} during initialization'.format(self.process.returncode)))
             try:
                 self.rpc = get_rpc_proxy(rpc_url(self.datadir, self.index, self.chain, self.rpchost), self.index, timeout=self.rpc_timeout, coveragedir=self.coverage_dir)
                 self.rpc.getblockcount()
@@ -160,11 +160,11 @@ class TestNode():
                 # -342 Service unavailable, RPC server started but is shutting down due to error
                 if e.error['code'] != -28 and e.error['code'] != -342:
                     raise  # unknown JSON RPC exception
-            except ValueError as e:  # cookie file not found and no rpcuser or rpcassword. dashd still starting
+            except ValueError as e:  # cookie file not found and no rpcuser or rpcassword. diabased still starting
                 if "No RPC credentials" not in str(e):
                     raise
             time.sleep(1.0 / poll_per_s)
-        self._raise_assertion_error("Unable to connect to dashd")
+        self._raise_assertion_error("Unable to connect to diabased")
 
     def get_wallet_rpc(self, wallet_name):
         if self.use_cli:
@@ -230,11 +230,11 @@ class TestNode():
     def assert_start_raises_init_error(self, extra_args=None, expected_msg=None, partial_match=False, *args, **kwargs):
         """Attempt to start the node and expect it to raise an error.
 
-        extra_args: extra arguments to pass through to dashd
-        expected_msg: regex that stderr should match when dashd fails
+        extra_args: extra arguments to pass through to diabased
+        expected_msg: regex that stderr should match when diabased fails
 
-        Will throw if dashd starts without an error.
-        Will throw if an expected_msg is provided and it does not match dashd's stdout."""
+        Will throw if diabased starts without an error.
+        Will throw if an expected_msg is provided and it does not match diabased's stdout."""
         with tempfile.SpooledTemporaryFile(max_size=2**16) as log_stderr:
             try:
                 self.start(extra_args, stderr=log_stderr, *args, **kwargs)
@@ -242,7 +242,7 @@ class TestNode():
                 self.stop_node()
                 self.wait_until_stopped()
             except FailedToStartError as e:
-                self.log.debug('dashd failed to start: %s', e)
+                self.log.debug('diabased failed to start: %s', e)
                 self.running = False
                 self.process = None
                 # Check stderr for expected message
@@ -259,9 +259,9 @@ class TestNode():
                                 'Expected message "{}" does not fully match stderr:\n"{}"'.format(expected_msg, stderr))
             else:
                 if expected_msg is None:
-                    assert_msg = "dashd should have exited with an error"
+                    assert_msg = "diabased should have exited with an error"
                 else:
-                    assert_msg = "dashd should have exited with expected error " + expected_msg
+                    assert_msg = "diabased should have exited with expected error " + expected_msg
                 self._raise_assertion_error(assert_msg)
 
     def add_p2p_connection(self, p2p_conn, *args, **kwargs):
@@ -323,7 +323,7 @@ class TestNodeCLI():
         self.binary = binary
         self.datadir = datadir
         self.input = None
-        self.log = logging.getLogger('TestFramework.dashcli')
+        self.log = logging.getLogger('TestFramework.diabasecli')
 
     def __call__(self, *options, input=None):
         # TestNodeCLI is callable with diabase-cli command-line options

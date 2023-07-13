@@ -364,7 +364,7 @@ namespace GUIUtil
     QString getActiveTheme();
 
     /** Check if a diabase specific theme is activated (light/dark).*/
-    bool dashThemeActive();
+    bool diabaseThemeActive();
 
     /** Load the theme and update all UI elements according to the appearance settings. */
     void loadTheme(bool fForce = false);

@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. dash_test
+	$(MAKE) -C .. diabase_test
 clean:
-	$(MAKE) -C .. dash_test_clean
+	$(MAKE) -C .. diabase_test_clean
 check:
-	$(MAKE) -C .. dash_test_check
+	$(MAKE) -C .. diabase_test_check

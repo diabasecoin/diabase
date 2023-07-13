@@ -1550,7 +1550,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elegir la subdivisión predeterminada para mostrar las cuantías en la interfaz y cuando se envían dashs.</translation>
+        <translation>Elegir la subdivisión predeterminada para mostrar las cuantías en la interfaz y cuando se envían diabases.</translation>
     </message>
     <message>
         <source>Decimal digits</source>

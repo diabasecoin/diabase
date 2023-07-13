@@ -1,8 +1,8 @@
 
 Debian
 ====================
-This directory contains files used to package dashd/diabase-qt
-for Debian-based Linux systems. If you compile dashd/diabase-qt yourself, there are some useful files here.
+This directory contains files used to package diabased/diabase-qt
+for Debian-based Linux systems. If you compile diabased/diabase-qt yourself, there are some useful files here.
 
 ## diabase: URI support ##
 
@@ -15,7 +15,7 @@ To install:
 
 If you build yourself, you will either need to modify the paths in
 the .desktop file or copy or symlink your diabase-qt binary to `/usr/bin`
-and the `../../share/pixmaps/dash128.png` to `/usr/share/pixmaps`
+and the `../../share/pixmaps/diabase128.png` to `/usr/share/pixmaps`
 
 diabase-qt.protocol (KDE)
 

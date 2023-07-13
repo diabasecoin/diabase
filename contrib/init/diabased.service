@@ -1,7 +1,7 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit dashd.service
+# $ systemctl edit diabased.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
@@ -12,12 +12,12 @@ Description=Diabase daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/dashd -daemon -conf=/etc/diabase/diabase.conf -pid=/run/dashd/dashd.pid
-# Creates /run/diabase owned by dashcore
-RuntimeDirectory=dashd
-User=dashcore
+ExecStart=/usr/bin/diabased -daemon -conf=/etc/diabase/diabase.conf -pid=/run/diabased/diabased.pid
+# Creates /run/diabase owned by diabasecore
+RuntimeDirectory=diabased
+User=diabasecore
 Type=forking
-PIDFile=/run/dashd/dashd.pid
+PIDFile=/run/diabased/diabased.pid
 Restart=on-failure
 
 # Hardening measures

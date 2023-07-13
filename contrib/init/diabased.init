@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 #
-#  dashd The Diabase Core server.
+#  diabased The Diabase Core server.
 #
 #
 # chkconfig: 345 80 20
-# description: dashd
-# processname: dashd
+# description: diabased
+# processname: diabased
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/dashd, see below
-if [ -f /etc/sysconfig/dashd ]; then
-        . /etc/sysconfig/dashd
+# you can override defaults in /etc/sysconfig/diabased, see below
+if [ -f /etc/sysconfig/diabased ]; then
+        . /etc/sysconfig/diabased
 fi
 
 RETVAL=0
 
-prog=dashd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/dashd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/dashd}
+prog=diabased
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/diabased
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/diabased}
 
-# dashd defaults to /usr/bin/dashd, override with BITCOIND_BIN
-dashd=${BITCOIND_BIN-/usr/bin/dashd}
+# diabased defaults to /usr/bin/diabased, override with BITCOIND_BIN
+diabased=${BITCOIND_BIN-/usr/bin/diabased}
 
-# dashd opts default to -disablewallet, override with BITCOIND_OPTS
-dashd_opts=${BITCOIND_OPTS--disablewallet}
+# diabased opts default to -disablewallet, override with BITCOIND_OPTS
+diabased_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $dashd $dashd_opts
+    daemon $DAEMONOPTS $diabased $diabased_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

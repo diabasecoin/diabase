@@ -12,7 +12,7 @@ ENV USER_ID ${USER_ID:-1000}
 ENV GROUP_ID ${GROUP_ID:-1000}
 RUN groupadd -g ${GROUP_ID} diabase
 RUN useradd -u ${USER_ID} -g diabase -s /bin/bash -m -d /diabase diabase
-RUN mkdir /diabase/.dashcore
+RUN mkdir /diabase/.diabasecore
 RUN chown diabase:diabase -R /diabase
 
 COPY bin/* /usr/local/bin/

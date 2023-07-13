@@ -5123,7 +5123,7 @@ https://www.transifex.com/projects/p/diabase/</translation>
 <context>
     <name>diabase-core</name>
     <message>
-        <location filename="../dashstrings.cpp" line="+39"/>
+        <location filename="../diabasestrings.cpp" line="+39"/>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>

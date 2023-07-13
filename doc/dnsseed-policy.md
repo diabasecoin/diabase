@@ -50,4 +50,4 @@ situations but should be discussed in public in advance.
 
 See also
 ----------
-- [diabase-seeder](https://github.com/nightlydash/diabase-seeder) is a reference implementation of a DNS seed.
+- [diabase-seeder](https://github.com/nightlydiabase/diabase-seeder) is a reference implementation of a DNS seed.

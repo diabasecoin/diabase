@@ -30,7 +30,7 @@ Homepage: https://www.diabase.com/
 Vcs-Git: git://github.com/diabasecoin/diabase.git
 Vcs-Browser: https://github.com/diabasecoin/diabase
 
-Package: dashd
+Package: diabased
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -40,7 +40,7 @@ Description: peer-to-peer network based digital currency - daemon
  and issuing money are carried out collectively by the network. Diabase Core
  is the name of the open source software which enables the use of this currency.
  .
- This package provides the daemon, dashd, and the CLI tool
+ This package provides the daemon, diabased, and the CLI tool
  diabase-cli to interact with the daemon.
 
 Package: diabase-qt

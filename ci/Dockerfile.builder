@@ -17,9 +17,9 @@ RUN pip3 install pyzmq # really needed?
 RUN pip3 install jinja2
 RUN pip3 install flake8
 
-# dash_hash
-RUN git clone https://github.com/diabasecoin/dash_hash
-RUN cd dash_hash && python3 setup.py install
+# diabase_hash
+RUN git clone https://github.com/diabasecoin/diabase_hash
+RUN cd diabase_hash && python3 setup.py install
 
 ARG USER_ID=1000
 ARG GROUP_ID=1000

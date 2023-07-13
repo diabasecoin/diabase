@@ -3,13 +3,13 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_dash_tx() {
+_diabase_tx() {
     local cur prev words=() cword
-    local dash_tx
+    local diabase_tx
 
     # save and use original argument to invoke diabase-tx for -help
     # it might not be in $PATH
-    dash_tx="$1"
+    diabase_tx="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n =: cur prev words cword
@@ -29,13 +29,13 @@ _dash_tx() {
         # only options (or an uncompletable hex-string) allowed
         # parse diabase-tx -help for options
         local helpopts
-        helpopts=$($dash_tx -help | sed -e '/^  -/ p' -e d )
+        helpopts=$($diabase_tx -help | sed -e '/^  -/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
     else
         # only commands are allowed
         # parse -help for commands
         local helpcmds
-        helpcmds=$($dash_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
+        helpcmds=$($diabase_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpcmds" -- "$cur" ) )
     fi
 
@@ -46,7 +46,7 @@ _dash_tx() {
 
     return 0
 } &&
-complete -F _dash_tx diabase-tx
+complete -F _diabase_tx diabase-tx
 
 # Local variables:
 # mode: shell-script

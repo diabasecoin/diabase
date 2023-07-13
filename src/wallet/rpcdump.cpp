@@ -857,7 +857,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
             "Note that if your wallet contains keys which are not derived from your HD seed (e.g. imported keys), these are not covered by\n"
             "only backing up the seed itself, and must be backed up too (e.g. ensure you back up the whole dumpfile).\n"
             "\nArguments:\n"
-            "1. \"filename\"    (string, required) The filename with path (either absolute or relative to dashd)\n"
+            "1. \"filename\"    (string, required) The filename with path (either absolute or relative to diabased)\n"
             "\nResult:\n"
             "{                           (json object)\n"
             "  \"keys\" : {            (int) The number of keys contained in the wallet dump\n"
@@ -915,7 +915,7 @@ UniValue dumpwallet(const JSONRPCRequest& request)
     file << "\n";
 
     UniValue obj(UniValue::VOBJ);
-    obj.pushKV("dashcoreversion", CLIENT_BUILD);
+    obj.pushKV("diabasecoreversion", CLIENT_BUILD);
     obj.pushKV("lastblockheight", chainActive.Height());
     obj.pushKV("lastblockhash", chainActive.Tip()->GetBlockHash().ToString());
     obj.pushKV("lastblocktime", FormatISO8601DateTime(chainActive.Tip()->GetBlockTime()));
@@ -1460,7 +1460,7 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
                                       "block from time %d, which is after or within %d seconds of key creation, and "
                                       "could contain transactions pertaining to the key. As a result, transactions "
                                       "and coins using this key may not appear in the wallet. This error could be "
-                                      "caused by pruning or data corruption (see dashd log for details) and could "
+                                      "caused by pruning or data corruption (see diabased log for details) and could "
                                       "be dealt with by downloading and rescanning the relevant blocks (see -reindex "
                                       "and -rescan options).",
                                 GetImportTimestamp(request, now), scannedTime - TIMESTAMP_WINDOW - 1, TIMESTAMP_WINDOW)));
