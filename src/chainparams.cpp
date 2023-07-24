@@ -354,7 +354,7 @@ public:
         consensus.DIP0008Height = 1088640; // 00000000000000112e41e4b3afda8b233b8cc07c532d2eac5de097b68358c43e
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Diabase: 2.5 minutes
+        consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200;
@@ -562,7 +562,7 @@ public:
         consensus.DIP0008Height = 78800; // 000000000e9329d964d80e7dab2e704b43b6bd2b91fea1e9315d38932e55fb55
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Diabase: 2.5 minutes
+        consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 4002; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
@@ -743,7 +743,7 @@ public:
         consensus.DIP0008Height = 2; // DIP0008 activated immediately on devnet
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 1
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Diabase: 2.5 minutes
+        consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 4001; // nPowKGWHeight >= nPowDGWHeight means "no KGW"
@@ -922,7 +922,7 @@ public:
         consensus.DIP0008Height = 432;
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 1
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
-        consensus.nPowTargetSpacing = 2.5 * 60; // Diabase: 2.5 minutes
+        consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nPowKGWHeight = 15200; // same as mainnet

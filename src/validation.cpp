@@ -1144,20 +1144,20 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
         // Early ages...
         // 1111/((x+1)^2)
         nSubsidyBase = (1111.0 / (pow((dDiff+1.0),2.0)));
-        if(nSubsidyBase > 500) nSubsidyBase = 500;
+        if(nSubsidyBase > 500) nSubsidyBase = 5;
         else if(nSubsidyBase < 1) nSubsidyBase = 1;
     } else if (nPrevHeight < 17000 || (dDiff <= 75 && nPrevHeight < 24000)) {
         // CPU mining era
         // 11111/(((x+51)/6)^2)
         nSubsidyBase = (11111.0 / (pow((dDiff+51.0)/6.0,2.0)));
-        if(nSubsidyBase > 500) nSubsidyBase = 500;
-        else if(nSubsidyBase < 25) nSubsidyBase = 25;
+        if(nSubsidyBase > 500) nSubsidyBase = 5;
+        else if(nSubsidyBase < 2.5) nSubsidyBase = 2.5;
     } else {
         // GPU/ASIC mining era
         // 2222222/(((x+2600)/9)^2)
         nSubsidyBase = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
-        if(nSubsidyBase > 25) nSubsidyBase = 25;
-        else if(nSubsidyBase < 5) nSubsidyBase = 5;
+        if(nSubsidyBase > 2.5) nSubsidyBase = 2.5;
+        else if(nSubsidyBase < .5) nSubsidyBase = .5;
     }
 
     CAmount nSubsidy = nSubsidyBase * COIN;
@@ -1182,62 +1182,65 @@ CAmount GetMasternodePayment(int nHeight, CAmount blockValue, int nReallocActiva
 {
     CAmount ret = blockValue/5; // start at 20%
 
-    int nMNPIBlock = Params().GetConsensus().nMasternodePaymentsIncreaseBlock;
-    int nMNPIPeriod = Params().GetConsensus().nMasternodePaymentsIncreasePeriod;
+    return ret;
+}
+
+//    int nMNPIBlock = Params().GetConsensus().nMasternodePaymentsIncreaseBlock;
+//   int nMNPIPeriod = Params().GetConsensus().nMasternodePaymentsIncreasePeriod;
 
                                                                       // mainnet:
-    if(nHeight > nMNPIBlock)                  ret += blockValue / 20; // 158000 - 25.0% - 2014-10-24
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 20; // 175280 - 30.0% - 2014-11-25
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 20; // 192560 - 35.0% - 2014-12-26
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 3)) ret += blockValue / 40; // 209840 - 37.5% - 2015-01-26
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret += blockValue / 40; // 227120 - 40.0% - 2015-02-27
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 5)) ret += blockValue / 40; // 244400 - 42.5% - 2015-03-30
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 6)) ret += blockValue / 40; // 261680 - 45.0% - 2015-05-01
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 7)) ret += blockValue / 40; // 278960 - 47.5% - 2015-06-01
-    if(nHeight > nMNPIBlock+(nMNPIPeriod* 9)) ret += blockValue / 40; // 313520 - 50.0% - 2015-08-03
+//    if(nHeight > nMNPIBlock)                  ret += blockValue / 20; // 158000 - 25.0% - 2014-10-24
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 1)) ret += blockValue / 20; // 175280 - 30.0% - 2014-11-25
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 2)) ret += blockValue / 20; // 192560 - 35.0% - 2014-12-26
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 3)) ret += blockValue / 40; // 209840 - 37.5% - 2015-01-26
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 4)) ret += blockValue / 40; // 227120 - 40.0% - 2015-02-27
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 5)) ret += blockValue / 40; // 244400 - 42.5% - 2015-03-30
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 6)) ret += blockValue / 40; // 261680 - 45.0% - 2015-05-01
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 7)) ret += blockValue / 40; // 278960 - 47.5% - 2015-06-01
+//    if(nHeight > nMNPIBlock+(nMNPIPeriod* 9)) ret += blockValue / 40; // 313520 - 50.0% - 2015-08-03
 
-    if (nHeight < nReallocActivationHeight) {
+//    if (nHeight < nReallocActivationHeight) {
         // Block Reward Realocation is not activated yet, nothing to do
-        return ret;
-    }
+//        return ret;
+//    }
 
-    int nSuperblockCycle = Params().GetConsensus().nSuperblockCycle;
+//    int nSuperblockCycle = Params().GetConsensus().nSuperblockCycle;
     // Actual realocation starts in the cycle next to one activation happens in
-    int nReallocStart = nReallocActivationHeight - nReallocActivationHeight % nSuperblockCycle + nSuperblockCycle;
+//    int nReallocStart = nReallocActivationHeight - nReallocActivationHeight % nSuperblockCycle + nSuperblockCycle;
 
-    if (nHeight < nReallocStart) {
+//    if (nHeight < nReallocStart) {
         // Activated but we have to wait for the next cycle to start realocation, nothing to do
-        return ret;
-    }
+//        return ret;
+//    }
 
     // Periods used to reallocate the masternode reward from 50% to 60%
-    static std::vector<int> vecPeriods{
-        513, // Period 1:  51.3%
-        526, // Period 2:  52.6%
-        533, // Period 3:  53.3%
-        540, // Period 4:  54%
-        546, // Period 5:  54.6%
-        552, // Period 6:  55.2%
-        557, // Period 7:  55.7%
-        562, // Period 8:  56.2%
-        567, // Period 9:  56.7%
-        572, // Period 10: 57.2%
-        577, // Period 11: 57.7%
-        582, // Period 12: 58.2%
-        585, // Period 13: 58.5%
-        588, // Period 14: 58.8%
-        591, // Period 15: 59.1%
-        594, // Period 16: 59.4%
-        597, // Period 17: 59.7%
-        599, // Period 18: 59.9%
-        600  // Period 19: 60%
-    };
+ //   static std::vector<int> vecPeriods{
+ //       513, // Period 1:  51.3%
+ //       526, // Period 2:  52.6%
+ //       533, // Period 3:  53.3%
+ //       540, // Period 4:  54%
+ //       546, // Period 5:  54.6%
+ //       552, // Period 6:  55.2%
+ //       557, // Period 7:  55.7%
+ //       562, // Period 8:  56.2%
+ //       567, // Period 9:  56.7%
+ //       572, // Period 10: 57.2%
+ //       577, // Period 11: 57.7%
+ //       582, // Period 12: 58.2%
+ //       585, // Period 13: 58.5%
+ //       588, // Period 14: 58.8%
+ //       591, // Period 15: 59.1%
+ //       594, // Period 16: 59.4%
+ //       597, // Period 17: 59.7%
+ //       599, // Period 18: 59.9%
+ //       600  // Period 19: 60%
+ //   };
 
-    int nReallocCycle = nSuperblockCycle * 3;
-    int nCurrentPeriod = std::min<int>((nHeight - nReallocStart) / nReallocCycle, vecPeriods.size() - 1);
+ //   int nReallocCycle = nSuperblockCycle * 3;
+ //   int nCurrentPeriod = std::min<int>((nHeight - nReallocStart) / nReallocCycle, vecPeriods.size() - 1);
 
-    return static_cast<CAmount>(blockValue * vecPeriods[nCurrentPeriod] / 1000);
-}
+//    return static_cast<CAmount>(blockValue * vecPeriods[nCurrentPeriod] / 1000);
+//}
 
 bool IsInitialBlockDownload()
 {
