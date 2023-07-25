@@ -81,8 +81,8 @@ Build using:
 
     PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g') # strip out problematic Windows %PATH% imported var
     cd depends
+    sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status" # temp build patch
     make HOST=x86_64-w64-mingw32
-    sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status" #temp build patch
     cd ..
     ./autogen.sh # not required when building from tarball
     CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
