@@ -337,7 +337,7 @@ public:
         consensus.nBudgetPaymentsStartBlock = 479200; // to be updated at actual block
         consensus.nBudgetPaymentsCycleBlocks = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 614820; // The block at which 12.1 goes live (end of final 12.0 budget cycle)
+        consensus.nSuperblockStartBlock = 700800; // start of 10% block budget system (2 years)
         consensus.nSuperblockStartHash = uint256S("0000000000020cb27c7ef164d21003d5d20cdca2f54dd9a9ca6d45f4d47f8aa3");
         consensus.nSuperblockCycle = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nGovernanceMinQuorum = 10;
@@ -345,8 +345,8 @@ public:
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.BIP34Height = 331;
         consensus.BIP34Hash = uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2");
-        consensus.BIP65Height = 619382; // 00000000000076d8fcea02ec0963de4abfd01e771fec0863f960c2c64fe6f357
-        consensus.BIP66Height = 245817; // 00000000000b1fa2dfa312863570e13fae9ca7b5566cb27e55422620b469aefa
+        consensus.BIP65Height = 331; // 00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2
+        consensus.BIP66Height = 331; // 00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2
         consensus.DIP0001Height = 750;
         consensus.DIP0003Height = 750;
         consensus.DIP0003EnforcementHeight = 750;
@@ -358,7 +358,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nPowKGWHeight = 15200;
-        consensus.nPowDGWHeight = 34140;
+        consensus.nPowDGWHeight = 15213;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -492,7 +492,7 @@ public:
             {
                 {0, uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f")},
                 {331, uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2")},
-                /*{9918, uint256S("0x00000000213e229f332c0ffbe34defdaa9e74de87f2d8d1f01af8d121c3c170b")},
+                /*{750, uint256S("0x00000836e32bfd5240569de7be102302ce779aacd0b751f8d711a12d7911d5d0")},
                 {16912, uint256S("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9")},
                 {23912, uint256S("0x0000000000335eac6703f3b1732ec8b2f89c3ba3a7889e5767b090556bb9a276")},
                 {35457, uint256S("0x0000000000b0ae211be59b048df14820475ad0dd53b9ff83b010f71a77342d9f")},
