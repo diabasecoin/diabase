@@ -334,11 +334,11 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 960*30; // 28800
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 479200; // to be updated at actual block
+        consensus.nBudgetPaymentsStartBlock = 1; // to be updated at actual block
         consensus.nBudgetPaymentsCycleBlocks = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 700800; // start of 10% block budget system (2 years)
-        consensus.nSuperblockStartHash = uint256S("0000000000020cb27c7ef164d21003d5d20cdca2f54dd9a9ca6d45f4d47f8aa3");
+        consensus.nSuperblockStartBlock = 1000; // start of 10% block budget system (2 years)
+        consensus.nSuperblockStartHash = uint256S("00000b31efb46f21d3329398fc95c5c7c490e1202bc2e30b801338d76dd650aa");
         consensus.nSuperblockCycle = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
@@ -347,11 +347,11 @@ public:
         consensus.BIP34Hash = uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2");
         consensus.BIP65Height = 331; // 00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2
         consensus.BIP66Height = 331; // 00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2
-        consensus.DIP0001Height = 750;
-        consensus.DIP0003Height = 750;
-        consensus.DIP0003EnforcementHeight = 750;
-        consensus.DIP0003EnforcementHash = uint256S("00000836e32bfd5240569de7be102302ce779aacd0b751f8d711a12d7911d5d0");
-        consensus.DIP0008Height = 750; // 00000000000000112e41e4b3afda8b233b8cc07c532d2eac5de097b68358c43e
+        consensus.DIP0001Height = 331;
+        consensus.DIP0003Height = 331;
+        consensus.DIP0003EnforcementHeight = 331;
+        consensus.DIP0003EnforcementHash = uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2");
+        consensus.DIP0008Height = 331; // 00000000000000112e41e4b3afda8b233b8cc07c532d2eac5de097b68358c43e
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
         consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
