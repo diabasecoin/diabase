@@ -334,20 +334,20 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 960*30; // 28800
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 1; // to be updated at actual block
+        consensus.nBudgetPaymentsStartBlock = 350500; // to be updated at actual block
         consensus.nBudgetPaymentsCycleBlocks = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 1000; // start of 10% block budget system (2 years)
+        consensus.nSuperblockStartBlock = 700800; // start of 10% block budget system (2 years)
         consensus.nSuperblockStartHash = uint256S("00000b31efb46f21d3329398fc95c5c7c490e1202bc2e30b801338d76dd650aa");
         consensus.nSuperblockCycle = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.BIP34Height = 1;
-        consensus.BIP34Hash = uint256S("0x00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c");
-        consensus.BIP65Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
-        consensus.BIP66Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
-        consensus.DIP0001Height = 1;
+        consensus.BIP34Hash = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f");
+        consensus.BIP65Height = 700800; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.BIP66Height = 350400; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.DIP0001Height = 700880;
         consensus.DIP0003Height = 350400;
         consensus.DIP0003EnforcementHeight = 370400;
         consensus.DIP0003EnforcementHash = uint256S("00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2");
