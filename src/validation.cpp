@@ -1133,13 +1133,14 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
     double dDiff;
     CAmount nSubsidyBase;
 
+    nSubsidyBase = 5;
+
   //  if (nPrevHeight <= 4500 && Params().NetworkIDString() == CBaseChainParams::MAIN) {
         /* a bug which caused diff to not be correctly calculated */
   //      dDiff = (double)0x0000ffff / (double)(nPrevBits & 0x00ffffff);
  //   } else {
  //       dDiff = ConvertBitsToDouble(nPrevBits);
  //   }
-    nSubsidyBase = 5;
  //   if (nPrevHeight < 5465) {
         // Early ages...
         // 1111/((x+1)^2)
@@ -1158,7 +1159,6 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
 //        nSubsidyBase = (2222222.0 / (pow((dDiff+2600.0)/9.0,2.0)));
 //        if(nSubsidyBase > 2.5) nSubsidyBase = 2.5;
  //       else if(nSubsidyBase < .5) nSubsidyBase = .5;
-    }
 
     CAmount nSubsidy = nSubsidyBase * COIN;
 
