@@ -367,41 +367,41 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1690388758; // Feb 5th, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1690388758;   // Feb 5th, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1690833450; // July 31, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1722465745;   // July 31, 2024
 
         // Deployment of DIP0001
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 1690388758; // Oct 15th, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 1690388758;   // Oct 15th, 2018
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 331;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nStartTime = 1690833450; // July 31, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nTimeout = 1722465745;   // July 31, 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nWindowSize = 1000;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThresholdStart = 265; // 80% of 4032
 
         // Deployment of BIP147
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].bit = 2;
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nStartTime = 1690388758; // Apr 23th, 2018
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nTimeout = 1690388758;   // Apr 23th, 2019
-        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nWindowSize = 331;
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nStartTime = 1690833450; // July 31, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nTimeout = 1722465745;   // July 31, 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nWindowSize = 1000;
         consensus.vDeployments[Consensus::DEPLOYMENT_BIP147].nThresholdStart = 265; // 80% of 4032
 
         // Deployment of DIP0003
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].bit = 3;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nStartTime = 1690388758; // Jan 1st, 2019
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nTimeout = 1690388758;   // Jan 1st, 2020
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nWindowSize = 331;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nStartTime = 1690833450; // July 31, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nTimeout = 1722465745;   // July 31, 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nWindowSize = 1000;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0003].nThresholdStart = 265; // 80% of 4032
 
         // Deployment of DIP0008
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].bit = 4;
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 1690388758; // May 15th, 2019
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 1690388758;   // May 15th, 2020
-        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 331;
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nStartTime = 1690833450; // July 31, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nTimeout = 1722465745;   // July 31, 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 1000;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThresholdStart = 265; // 80% of 4032
 
         // Deployment of Block Reward Reallocation
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].bit = 5;
-        consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nStartTime = 1601510400; // Oct 1st, 2020
-        consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nTimeout = 1633046400; // Oct 1st, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nStartTime = 1722465745; // July 31, 2024
+        consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nTimeout = 1754001745;   // July 31, 2025
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nWindowSize = 4032;
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nThresholdStart = 3226; // 80% of 4032
         consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nThresholdMin = 2420; // 60% of 4032
@@ -420,7 +420,7 @@ public:
 //        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000549cd3ccb81a55892330"); // 1450000
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000"); // Start
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2"); // 331
+        consensus.defaultAssumeValid = uint256S("0x0000002d47b71b3c1e94acdd3f55f33e1c82103547b3248c115efadf56748746"); // 1000
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -491,7 +491,7 @@ public:
         checkpointData = {
             {
                 {0, uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f")},
-                //{331, uint256S("0x00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2")},
+                {1000, uint256S("0x0000002d47b71b3c1e94acdd3f55f33e1c82103547b3248c115efadf56748746")},
                 /*{750, uint256S("0x00000836e32bfd5240569de7be102302ce779aacd0b751f8d711a12d7911d5d0")},
                 {16912, uint256S("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9")},
                 {23912, uint256S("0x0000000000335eac6703f3b1732ec8b2f89c3ba3a7889e5767b090556bb9a276")},
@@ -521,8 +521,8 @@ public:
         };
 
         chainTxData = ChainTxData{
-            168892927, // * UNIX timestamp of last known number of transactions (Block 1450962)
-            0,   // * total number of transactions between genesis and that timestamp
+            1690833450, // * UNIX timestamp of last known number of transactions (Block 1000)
+            1000,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.0         // * estimated number of transactions per second after that timestamp
         };
