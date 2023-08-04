@@ -329,36 +329,36 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 350400; // Note: number of blocks per calendar year (Halving each year)
-        consensus.nMasternodePaymentsStartBlock = 1; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
-        consensus.nMasternodePaymentsIncreaseBlock = 2100000000;  // Disabled
-        consensus.nMasternodePaymentsIncreasePeriod = 2100000000; // Disabled
+        consensus.nMasternodePaymentsStartBlock = 100000; // not true, but it's ok as long as it's less then nMasternodePaymentsIncreaseBlock
+        consensus.nMasternodePaymentsIncreaseBlock = 158000; // to be updated at actual block
+        consensus.nMasternodePaymentsIncreasePeriod = 960*30; // 28800
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 2100000000; // Disabled
-        consensus.nBudgetPaymentsCycleBlocks = 2100000000; // Disabled
-        consensus.nBudgetPaymentsWindowBlocks = 2100000000;
-        consensus.nSuperblockStartBlock = 2100000000; // Disabled
-        consensus.nSuperblockStartHash = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f");
-        consensus.nSuperblockCycle = 2100000000; // Disabled
+        consensus.nBudgetPaymentsStartBlock = 350500; // to be updated at actual block
+        consensus.nBudgetPaymentsCycleBlocks = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
+        consensus.nBudgetPaymentsWindowBlocks = 100;
+        consensus.nSuperblockStartBlock = 700800; // start of 10% block budget system (2 years)
+        consensus.nSuperblockStartHash = uint256S("00000b31efb46f21d3329398fc95c5c7c490e1202bc2e30b801338d76dd650aa");
+        consensus.nSuperblockCycle = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nGovernanceMinQuorum = 10;
         consensus.nGovernanceFilterElements = 20000;
         consensus.nMasternodeMinimumConfirmations = 15;
-        consensus.BIP34Height = 0;
+        consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f");
-        consensus.BIP65Height = 0;
-        consensus.BIP66Height = 0;
-        consensus.DIP0001Height = 0;
-        consensus.DIP0003Height = 0;
-        consensus.DIP0003EnforcementHeight = 0;
-        consensus.DIP0003EnforcementHash = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f");
-        consensus.DIP0008Height = 0;
+        consensus.BIP65Height = 700800; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.BIP66Height = 350400; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.DIP0001Height = 700880;
+        consensus.DIP0003Height = 350400;
+        consensus.DIP0003EnforcementHeight = 370400;
+        consensus.DIP0003EnforcementHash = uint256S("00000bd37447baff52dca005beb29c61fa7103b9d6701f31cdd8a3399af2e9b2");
+        consensus.DIP0008Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
         consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
-        consensus.nPowKGWHeight = 175200;
-        consensus.nPowDGWHeight = 350400;
+        consensus.nPowKGWHeight = 15200;
+        consensus.nPowDGWHeight = 15213;
         consensus.nRuleChangeActivationThreshold = 1916; // 95% of 2016
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
@@ -418,9 +418,9 @@ public:
 
         // The best chain should have at least this much work.
 //        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000549cd3ccb81a55892330"); // 1450000
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100010"); // Start
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000"); // Start
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f"); // genesis
+        consensus.defaultAssumeValid = uint256S("0x0000002d47b71b3c1e94acdd3f55f33e1c82103547b3248c115efadf56748746"); // 1000
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -491,7 +491,7 @@ public:
         checkpointData = {
             {
                 {0, uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f")},
-                //{1000, uint256S("0x0000002d47b71b3c1e94acdd3f55f33e1c82103547b3248c115efadf56748746")},
+                {1000, uint256S("0x0000002d47b71b3c1e94acdd3f55f33e1c82103547b3248c115efadf56748746")},
                 /*{750, uint256S("0x00000836e32bfd5240569de7be102302ce779aacd0b751f8d711a12d7911d5d0")},
                 {16912, uint256S("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9")},
                 {23912, uint256S("0x0000000000335eac6703f3b1732ec8b2f89c3ba3a7889e5767b090556bb9a276")},
@@ -521,8 +521,8 @@ public:
         };
 
         chainTxData = ChainTxData{
-            168892927, // * UNIX timestamp of last known number of transactions (Block 1000)
-            0,   // * total number of transactions between genesis and that timestamp
+            1690833450, // * UNIX timestamp of last known number of transactions (Block 1000)
+            1000,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.0         // * estimated number of transactions per second after that timestamp
         };
