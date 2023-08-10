@@ -334,10 +334,10 @@ public:
         consensus.nMasternodePaymentsIncreasePeriod = 960*30; // 28800
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
-        consensus.nBudgetPaymentsStartBlock = 21000000; // to be updated at actual block
+        consensus.nBudgetPaymentsStartBlock = 21000000; // disabled
         consensus.nBudgetPaymentsCycleBlocks = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nBudgetPaymentsWindowBlocks = 100;
-        consensus.nSuperblockStartBlock = 21000000; // start of 10% block budget system (2 years)
+        consensus.nSuperblockStartBlock = 21000000; // disabled
         consensus.nSuperblockStartHash = uint256S("00000b31efb46f21d3329398fc95c5c7c490e1202bc2e30b801338d76dd650aa");
         consensus.nSuperblockCycle = 28800; // ~(60*24*30)/1.5, actual number of blocks per month is 350400 / 12 = 29200
         consensus.nGovernanceMinQuorum = 1;
@@ -345,13 +345,13 @@ public:
         consensus.nMasternodeMinimumConfirmations = 15;
         consensus.BIP34Height = 1;
         consensus.BIP34Hash = uint256();
-        consensus.BIP65Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
-        consensus.BIP66Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.BIP65Height = 1; 
+        consensus.BIP66Height = 1; 
         consensus.DIP0001Height = 2;
         consensus.DIP0003Height = 2;
         consensus.DIP0003EnforcementHeight = 2;
         consensus.DIP0003EnforcementHash = uint256();
-        consensus.DIP0008Height = 1; // 00000bdae5a3e9f2c16884526c007703fc2e0498d177bdb27ce3945a0479300c
+        consensus.DIP0008Height = 1; 
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
         consensus.nPowTargetTimespan = 24 * 60 * 60; // Diabase: 1 day
         consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
@@ -398,29 +398,12 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nWindowSize = 2;
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0008].nThresholdStart = 1;
 
-        // Deployment of Block Reward Reallocation
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].bit = 5;
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nStartTime = 1722465745; // July 31, 2024
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nTimeout = 1754001745;   // July 31, 2025
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nWindowSize = 4032;
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nThresholdStart = 3226; // 80% of 4032
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nThresholdMin = 2420; // 60% of 4032
- //       consensus.vDeployments[Consensus::DEPLOYMENT_REALLOC].nFalloffCoeff = 5; // this corresponds to 10 periods
 
-        // Deployment of DIP0020, DIP0021 and LLMQ_100_67 quorums
- //       consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].bit = 6;
- //       consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nStartTime = 1625097600; // July 1st, 2021
-//        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nTimeout = 1656633600; // July 1st, 2022
-//        consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nWindowSize = 4032;
- //       consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nThresholdStart = 3226; // 80% of 4032
- //       consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nThresholdMin = 2420; // 60% of 4032
- //       consensus.vDeployments[Consensus::DEPLOYMENT_DIP0020].nFalloffCoeff = 5; // this corresponds to 10 periods
 
         // The best chain should have at least this much work.
-//        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000549cd3ccb81a55892330"); // 1450000
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000"); // Start
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000006106962104"); // 2900
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f"); // 1000
+        consensus.defaultAssumeValid = uint256S("0x00000015821e9b0d471bb366a0ea180096549af9efcbe49bc11ddf9862e29f0a"); // 2900
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -492,37 +475,13 @@ public:
             {
                 {0, uint256S("0x0000057be3e5420fcefa43eda26de60a3802bfc55a967443b07a41c133e0008f")},
                 {1000, uint256S("0x00000003d3c41b0984d80f24237725b581389a26d59a04d520f89e8db0f82d4f")},
-                /*{750, uint256S("0x00000836e32bfd5240569de7be102302ce779aacd0b751f8d711a12d7911d5d0")},
-                {16912, uint256S("0x00000000075c0d10371d55a60634da70f197548dbbfa4123e12abfcbc5738af9")},
-                {23912, uint256S("0x0000000000335eac6703f3b1732ec8b2f89c3ba3a7889e5767b090556bb9a276")},
-                {35457, uint256S("0x0000000000b0ae211be59b048df14820475ad0dd53b9ff83b010f71a77342d9f")},
-                {45479, uint256S("0x000000000063d411655d590590e16960f15ceea4257122ac430c6fbe39fbf02d")},
-                {55895, uint256S("0x0000000000ae4c53a43639a4ca027282f69da9c67ba951768a20415b6439a2d7")},
-                {68899, uint256S("0x0000000000194ab4d3d9eeb1f2f792f21bb39ff767cb547fe977640f969d77b7")},
-                {74619, uint256S("0x000000000011d28f38f05d01650a502cc3f4d0e793fbc26e2a2ca71f07dc3842")},
-                {75095, uint256S("0x0000000000193d12f6ad352a9996ee58ef8bdc4946818a5fec5ce99c11b87f0d")},
-                {88805, uint256S("0x00000000001392f1652e9bf45cd8bc79dc60fe935277cd11538565b4a94fa85f")},
-                {107996, uint256S("0x00000000000a23840ac16115407488267aa3da2b9bc843e301185b7d17e4dc40")},
-                {137993, uint256S("0x00000000000cf69ce152b1bffdeddc59188d7a80879210d6e5c9503011929c3c")},
-                {167996, uint256S("0x000000000009486020a80f7f2cc065342b0c2fb59af5e090cd813dba68ab0fed")},
-                {207992, uint256S("0x00000000000d85c22be098f74576ef00b7aa00c05777e966aff68a270f1e01a5")},
-                {312645, uint256S("0x0000000000059dcb71ad35a9e40526c44e7aae6c99169a9e7017b7d84b1c2daf")},
-                {407452, uint256S("0x000000000003c6a87e73623b9d70af7cd908ae22fee466063e4ffc20be1d2dbc")},
-                {523412, uint256S("0x000000000000e54f036576a10597e0e42cc22a5159ce572f999c33975e121d4d")},
-                {523930, uint256S("0x0000000000000bccdb11c2b1cfb0ecab452abf267d89b7f46eaf2d54ce6e652c")},
-                {750000, uint256S("0x00000000000000b4181bbbdddbae464ce11fede5d0292fb63fdede1e7c8ab21c")},
-                {888900, uint256S("0x0000000000000026c29d576073ab51ebd1d3c938de02e9a44c7ee9e16f82db28")},
-                {967800, uint256S("0x0000000000000024e26c7df7e46d673724d223cf4ca2b2adc21297cc095600f4")},
-                {1067570, uint256S("0x000000000000001e09926bcf5fa4513d23e870a34f74e38200db99eb3f5b7a70")},
-                {1167570, uint256S("0x000000000000000fb7b1e9b81700283dff0f7d87cf458e5edfdae00c669de661")},
-                {1364585, uint256S("0x00000000000000022f355c52417fca9b73306958f7c0832b3a7bce006ca369ef")},
-                {1450000, uint256S("0x00000000000000105cfae44a995332d8ec256850ea33a1f7b700474e3dad82bc")},*/
+                {2900, uint256S("0x00000015821e9b0d471bb366a0ea180096549af9efcbe49bc11ddf9862e29f0a")},
             }
         };
 
         chainTxData = ChainTxData{
-            1691327073, // * UNIX timestamp of last known number of transactions (Block 1000)
-            1000,   // * total number of transactions between genesis and that timestamp
+            1691529292, // * UNIX timestamp of last known number of transactions (Block 2900)
+            2900,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.0         // * estimated number of transactions per second after that timestamp
         };
@@ -692,12 +651,6 @@ public:
         checkpointData = {
             {
                 {0, uint256S("0x000008fae8d6978a836cc67f3531dcf4ba3345ef99badd74f92d5c08a0c41a17")},
-                /*{1999, uint256S("0x00000052e538d27fa53693efe6fb6892a0c1d26c0235f599171c48a3cce553b1")},
-                {2999, uint256S("0x0000024bc3f4f4cb30d29827c13d921ad77d2c6072e586c7f60d83c2722cdcc5")},
-                {96090, uint256S("0x00000000033df4b94d17ab43e999caaf6c4735095cc77703685da81254d09bba")},
-                {200000, uint256S("0x000000001015eb5ef86a8fe2b3074d947bc972c5befe32b28dd5ce915dc0d029")},
-                {395750, uint256S("0x000008b78b6aef3fd05ab78db8b76c02163e885305545144420cb08704dce538")},
-                {470000, uint256S("0x0000009303aeadf8cf3812f5c869691dbd4cb118ad20e9bf553be434bafe6a52")},*/
             }
         };
 
