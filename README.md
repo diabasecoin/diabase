@@ -12,7 +12,7 @@
     <a href="https://github.com/diabasecoin/diabase/releases">
         <img src="https://img.shields.io/github/v/release/diabasecoin/diabase" alt="release version">
     </a>
-    <a href="https://discord.gg/p5Dgdwhc">
+    <a href="https://discord.gg/PeXejqAJBj">
         <img src="https://img.shields.io/discord/701937565929963581?logo=discord" alt="chat on Discord">
     </a>
     <a href="https://twitter.com/DiabaseCoin">
