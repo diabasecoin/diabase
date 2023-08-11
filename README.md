@@ -32,13 +32,15 @@ For more information, as well as an immediately useable, binary version of
 the Diabase Core software, see https://www.diabasecoin.com/home/wallets
 
 ## Tech Specification
-- Max Supply: 3,600,000 DIAC (halving each year)
+- Max Supply: 3,600,000 DIAC 
 - Block Time: 90 seconds
-- Block Reward: 5 DIAC
+- Block Reward: 5 DIAC (halving each year)
 - Block Generation: 90% PoW | 10% Masternodes
 - Mining Algorithm: X11
 - ZERO Premine
 - Difficulty Adjust, "Kimoto Gravity Well"(KGW) / "Dark Gravity Wave"(DGW)
+
+Build Instructions can be found under docs!
 
 License
 -------
