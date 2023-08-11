@@ -427,8 +427,8 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("dnsseed.diabase.com");
-        vSeeds.emplace_back("dnsseed.diabase.io");
+        vSeeds.emplace_back("dnsseed.diabasecoin.com");
+        vSeeds.emplace_back("dnsseed.diabasecoin.io");
 
         // Diabase addresses start with 'D'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,76);
