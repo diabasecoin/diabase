@@ -1,5 +1,26 @@
-[![twitter](https://img.shields.io/twitter/follow/DiabaseCoin?style=social)](https://twitter.com/DiabaseCoin)
-[![discord](https://img.shields.io/discord/701937565929963581)](https://discord.gg/p5Dgdwhc)
+<p align="center">
+    <a href="https://github.com/diabasecoin/diabase/releases">
+        <img src="https://img.shields.io/github/downloads/diabasecoin/releases/total" alt="downloads">
+    </a>
+    <a href="https://github.com/diabasecoin/diabase/">
+        <img src="https://img.shields.io/github/last-commit/diabasecoin/diabase" alt="last commit">
+    </a>
+    <a href="https://github.com/diabasecoin/diabase/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/diabasecoin/diabase" />
+    </a>
+	<br/>
+    <a href="https://github.com/diabasecoin/diabase/releases">
+        <img src="https://img.shields.io/github/v/release/diabasecoin/diabase" alt="release version">
+    </a>
+    <a href="https://discord.gg/p5Dgdwhc">
+        <img src="https://img.shields.io/discord/701937565929963581?logo=discord" alt="chat on Discord">
+    </a>
+    <a href="https://twitter.com/DiabaseCoin">
+        <img src="https://img.shields.io/twitter/follow/DiabaseCoin?style=social&logo=twitter"
+            alt="follow on Twitter">
+    </a>
+</p>
+
 
 ---
 
