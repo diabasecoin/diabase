@@ -1,8 +1,15 @@
+[![twitter](https://img.shields.io/twitter/follow/DiabaseCoin?style=social)](https://twitter.com/DiabaseCoin)
+[![discord](https://img.shields.io/discord/701937565929963581)](https://discord.gg/p5Dgdwhc)
+
+---
+
+![](./share/pixmaps/diabase256.png)
+
 Diabase Blockchain Core
 ===========================
 
 
-https://https://www.diabasecoin.com/
+https://www.diabasecoin.com/
 
 
 What is Diabase?
