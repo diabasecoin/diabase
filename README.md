@@ -1,24 +1,28 @@
-Diabase Core staging tree 0.17
+Diabase Blockchain Core
 ===========================
 
-|CI|master|develop|
-|-|-|-|
-|Gitlab|[![Build Status](https://gitlab.com/diabasecoin/diabase/badges/master/pipeline.svg)](https://gitlab.com/diabasecoin/diabase/-/tree/master)|[![Build Status](https://gitlab.com/diabasecoin/diabase/badges/develop/pipeline.svg)](https://gitlab.com/diabasecoin/diabase/-/tree/develop)|
 
-https://www.diabase.com
+https://https://www.diabasecoin.com/
 
 
 What is Diabase?
 -------------
 
-Diabase is an experimental digital currency that enables instant, private
-payments to anyone, anywhere in the world. Diabase uses peer-to-peer technology
-to operate with no central authority: managing transactions and issuing money
-are carried out collectively by the network. Diabase Core is the name of the open
-source software which enables the use of this currency.
+Diabase Blockchain, the next evolution in digital wealth
+preservation. Built upon the robust and secure X11 algorithm,
+Diabase offers unparalleled protection for your assets. With
+a unique focus on being a store of wealth, Diabase provides 
+stability and long-term value appreciation.
+
+Empowered by a network of masternodes, Diabase ensures swift
+and secure transactions, maintaining the integrity of your
+holdings. These masternodes contribute to network security,
+enhancing decentralization and ensuring fast private transactions.
+Diabase Core is the name of the open source software which enables
+the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Diabase Core software, see https://www.diabase.com/get-diabase/.
+the Diabase Core software, see https://www.diabasecoin.com/home/wallets
 
 
 License
