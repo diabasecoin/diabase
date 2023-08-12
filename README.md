@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/diabasecoin/diabase/releases">
-        <img src="https://img.shields.io/github/downloads/diabasecoin/releases/total" alt="downloads">
+        <img src="https://img.shields.io/github.com/diabasecoin/diabase/releases/total" alt="downloads">
     </a>
     <a href="https://github.com/diabasecoin/diabase/">
         <img src="https://img.shields.io/github/last-commit/diabasecoin/diabase" alt="last commit">
