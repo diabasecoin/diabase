@@ -2628,7 +2628,7 @@ static void DoWarning(const std::string& strWarning)
     SetMiscWarning(strWarning);
     if (!fWarned) {
         AlertNotify(strWarning);
-        fWarned = false;
+        fWarned = true;
     }
 }
 
