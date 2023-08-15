@@ -2642,33 +2642,28 @@ static void AppendWarning(std::string& res, const std::string& warn)
 /** Check warning conditions and do some notifications on new chain tip set. */
 void static UpdateTip(const CBlockIndex *pindexNew, const CChainParams& chainParams) {
     // New best block
-void static UpdateTip(CBlockIndex *pindexNew, const CChainParams& chainParams) {
-    chainActive.SetTip(pindexNew);
-
-    // New best block
     mempool.AddTransactionsUpdated(1);
 
-    cvBlockChange.notify_all();
+    {
+        WaitableLock lock(g_best_block_mutex);
+        g_best_block = pindexNew->GetBlockHash();
+        g_best_block_cv.notify_all();
+    }
 
-    static bool fWarned = false;
-    std::vector<std::string> warningMessages;
+    std::string warningMessages;
     if (!IsInitialBlockDownload())
     {
         int nUpgraded = 0;
-        const CBlockIndex* pindex = chainActive.Tip();
+        const CBlockIndex* pindex = pindexNew;
         for (int bit = 0; bit < VERSIONBITS_NUM_BITS; bit++) {
             WarningBitsConditionChecker checker(bit);
             ThresholdState state = checker.GetStateFor(pindex, chainParams.GetConsensus(), warningcache[bit]);
-            if (state == THRESHOLD_ACTIVE || state == THRESHOLD_LOCKED_IN) {
-                if (state == THRESHOLD_ACTIVE) {
-                    std::string strWarning = strprintf(_("Warning: unknown new rules activated (versionbit %i)"), bit);
-                    SetMiscWarning(strWarning);
-                    if (!fWarned) {
-                        CAlert::Notify(strWarning);
-                        fWarned = true;
-                    }
+            if (state == ThresholdState::ACTIVE || state == ThresholdState::LOCKED_IN) {
+                const std::string strWarning = strprintf(_("Warning: unknown new rules activated (versionbit %i)"), bit);
+                if (state == ThresholdState::ACTIVE) {
+                    DoWarning(strWarning);
                 } else {
-                    warningMessages.push_back(strprintf("unknown new rules are about to activate (versionbit %i)", bit));
+                    AppendWarning(warningMessages, strWarning);
                 }
             }
         }
