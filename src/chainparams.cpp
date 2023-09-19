@@ -353,7 +353,7 @@ public:
         consensus.DIP0003EnforcementHash = uint256();
         consensus.DIP0008Height = 1; 
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); // ~uint256(0) >> 20
-        consensus.nPowTargetTimespan = 15 * 60; // Diabase: 10 blocks
+        consensus.nPowTargetTimespan = 15 * 60; // Diabase: 10 blocks approx
         consensus.nPowTargetSpacing = 1.5 * 60; // Diabase: 1.5 minutes
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
