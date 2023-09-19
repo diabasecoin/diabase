@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2020 The Diabase Core developers
+// Copyright (c) 2023 The Diabase Core developers
 
 #include <cachemap.h>
 
