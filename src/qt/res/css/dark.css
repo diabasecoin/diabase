@@ -23,7 +23,7 @@ Loaded in GUIUtil::loadStyleSheet() in guitil.cpp.
 #333
 #00599a
 #27507a
-#0b1724
+#2d2d2e
 #323233
 #363637
 #39393b
@@ -77,7 +77,7 @@ QAbstractSpinBox,
 QComboBox,
 QPlainTextEdit,
 QLineEdit {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #00599a;
     color: #c7c7c7;
 }
@@ -87,7 +87,7 @@ QAbstractSpinBox:hover:!focus,
 QComboBox:hover:!focus,
 QPlainTextEdit:hover:!focus,
 QLineEdit:hover:!focus {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #27507a;
 }
 
@@ -152,7 +152,7 @@ QCalendarWidget,
 #qt_calendar_nextmonth,
 #qt_calendar_monthbutton,
 #qt_calendar_yearbutton {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
 }
 
 #qt_calendar_calendarview,
@@ -424,7 +424,7 @@ QWidget#ReceiveCoinsDialog .QFrame#frame QPushButton#showRequestButton:hover,
 QDialog#SignVerifyMessageDialog QPushButton#clearButton_SM:hover,
 QDialog#SignVerifyMessageDialog QPushButton#clearButton_VM:hover {
     background-color: #818181;
-    color: #0b1724;
+    color: #2d2d2e;
 }
 
 QWidget#AddressBookPage QPushButton#newAddress:pressed,
@@ -617,12 +617,12 @@ QTableView
 ******************************************************/
 
 .QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
 }
 
 QTableView::item { /* Table Item */
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
 }
 
@@ -652,7 +652,7 @@ QTextEdit
 ******************************************************/
 
 QTextEdit {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
     color: #c7c7c7;
 }
@@ -689,7 +689,7 @@ QToolTip
 ******************************************************/
 
 QToolTip {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
     color: #c7c7c7;
 }
@@ -699,8 +699,8 @@ QTreeWidget
 ******************************************************/
 
 QTreeWidget {
-    alternate-background-color: #0b1724;
-    background-color: #0b1724;
+    alternate-background-color: #2d2d2e;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
 }
 QTreeWidget::branch::closed:has-children {
@@ -823,7 +823,7 @@ HelpMessageDialog
 ******************************************************/
 
 HelpMessageDialog QWidget#scrollAreaWidgetContents {
-    background-color: #0b1724;
+    background-color: #2d2d2e;
     border-color: #4a4a4b;
 }
 
