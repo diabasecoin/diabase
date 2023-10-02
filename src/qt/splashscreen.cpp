@@ -41,8 +41,8 @@ SplashScreen::SplashScreen(interfaces::Node& node, Qt::WindowFlags f, const Netw
     // Geometries of splashscreen
     int width = 480;
     int height = 560;
-    int logoWidth = 270;
-    int logoHeight = 270;
+    int logoWidth = 170;
+    int logoHeight = 170;
     //    int width = 380;
 //    int height = 460;
 //    int logoWidth = 270;
