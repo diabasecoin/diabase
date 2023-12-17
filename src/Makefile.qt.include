@@ -27,6 +27,7 @@ QT_TS = \
   qt/locale/diabase_th.ts \
   qt/locale/diabase_tr.ts \
   qt/locale/diabase_vi.ts \
+  qt/locale/diabase_id.ts \
   qt/locale/diabase_zh_CN.ts \
   qt/locale/diabase_zh_TW.ts
 
