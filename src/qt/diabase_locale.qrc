@@ -19,6 +19,7 @@
         <file alias="th">locale/diabase_th.qm</file>
         <file alias="tr">locale/diabase_tr.qm</file>
         <file alias="vi">locale/diabase_vi.qm</file>
+        <file alias="id">locale/diabase_id.qm</file>
         <file alias="zh_CN">locale/diabase_zh_CN.qm</file>
         <file alias="zh_TW">locale/diabase_zh_TW.qm</file>
     </qresource>
