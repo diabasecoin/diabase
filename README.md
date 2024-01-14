@@ -53,7 +53,7 @@ the Diabase Core software, see https://www.diabasecoin.com/home/wallets
 - Max Supply: 3,600,000 DIAC 
 - Block Time: 90 seconds
 - Block Reward: 5 DIAC (halving each year)
-- Block Generation: 90% PoW | 10% Masternodes
+- Block Generation: 80% PoW | 20% Masternodes
 - Mining Algorithm: X11
 - ZERO Premine
 - Difficulty Adjust, "Kimoto Gravity Well"(KGW) / "Dark Gravity Wave"(DGW)
@@ -115,4 +115,3 @@ Translations are periodically pulled from Transifex and merged into the git repo
 **Important**: We do not accept translation changes as GitHub pull requests because the next
 pull from Transifex would automatically overwrite them again.
 
-Translators should also follow the [forum](https://www.diabase.com/forum/topic/diabase-worldwide-collaboration.88/).
